@@ -4,7 +4,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3 align="center"> 
- EQUIPE - Coffend
+ Equipe - Mob Team
 <h3 align="center"> 
  
 ![logo_projeto](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Vaidevan.png)
@@ -16,8 +16,9 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 <br></br>
 ## :desktop_computer: Tecnologias Utilizadas
 <ul>
-<img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original-wordmark.svg" width="100"    height="100" />	
+<img src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Gitlab-512.png" width="100"    height="100" />	
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/trello/trello-plain-wordmark.svg" width="100" height="100" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/MIT_App_Inventor_Logo.svg" width="100" height="100" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain-wordmark.svg" width="100" height="100" />
 </ul>
  <br></br>
@@ -35,7 +36,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
  ## :dart: Contribuições Pessoais: 
 
 <details>
-<summary> 1 sprint: Protipação da aplicação: </summary>
+<summary> 1 sprint: Prototipação da aplicação: </summary>
  
 - Auxilio na prototipagem de algumas telas da nosso aplicativo (vai deVan), utilizei o editor grafico Figma.
 
@@ -62,7 +63,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
       <td>★★★☆☆</td>
     </tr>
     <tr>
-      <td>Firebase</td>
+      <td>FIREBASE</td>
       <td>★☆☆☆☆</td>
     </tr>	
     <tr>
@@ -98,6 +99,5 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h2 align="center"> GIT DO PROJETO</h2>
-
-<h5 align="center"><a href="https://gitlab.com/mobteam1/vaidevan"></a></h5>
+<h2 align="center"> GITLAB DO PROJETO</h2>
+ <h3 align="center">https://gitlab.com/mobteam1/vaidevan</h3>
