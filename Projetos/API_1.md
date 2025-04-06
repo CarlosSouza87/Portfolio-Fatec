@@ -32,8 +32,8 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 
  ## :dart: Contribuições Pessoais: 
 
-<details>
-<summary> 1 sprint: Prototipação da aplicação: </summary>
+
+<summary> 1 Sprint: Prototipação da aplicação: </summary>
  
 - Auxilio na prototipagem de algumas telas da nosso aplicativo (vai deVan), utilizei o editor grafico Figma.
 
@@ -45,7 +45,8 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 
 4° Sprint: Video ilustrativo do funcionamento do aplicativo:
 - Realizei os videos ilustrativos da aplicação em funcionamento com explicação para a compreensão melhor de todos e com a aplicação finalizada.
-</details>
+
+5° Apresentação da evolução do aplicativo ao cliente em todas as sprints. 
 
 <br></br>
 
