@@ -21,7 +21,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain-wordmark.svg" width="100" height="100" />
 </ul>
  <br></br>
-<a href="https://github.com">GitHub</a>: utilizado como repositório de projeto,para armazenar todo o código-fonte e recursos do projeto. Isso permitiu o controle de versões, colaboração entre a equipe de desenvolvimento e o acompanhamento de alterações no código ao longo do tempo.
+<a href="https://gitlab.com">GitLab</a>: utilizado como repositório de projeto,para armazenar todo o código-fonte e recursos do projeto. Isso permitiu o controle de versões, colaboração entre a equipe de desenvolvimento e o acompanhamento de alterações no código ao longo do tempo.
  <br></br>
  <a href="https://appinventor.mit.edu">AppInventor</a>: utilizada para estruturação e desenvolvimento do código do aplicativo.Ofereceu uma interface de arrastar e soltar para a criação de aplicativos Android, permitindo uma prototipagem rápida e eficaz.
  <br></br>
@@ -70,7 +70,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
       <td>★★☆☆☆</td>
     </tr>
     <tr>
-      <td>GITHUB</td>
+      <td>GITLAB</td>
       <td>★★★☆☆</td>
     </tr>
   </table>
