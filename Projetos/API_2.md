@@ -99,7 +99,7 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h2 align="center"> GIT DO PROJETO</h2>
+<h2 align="center"> GITHUB DO PROJETO</h2>
 
  <h3 align="center">https://github.com/apibanco/Vigilant</h3>
  
