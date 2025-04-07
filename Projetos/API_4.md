@@ -116,10 +116,9 @@
   
 ---
 
- <h2 align="center"> Git do Projeto link:</h2>
+ <h2 align="center"> Git do Projeto</h2>
 
    
-   <p align="justify" style="font-family:roboto;"><li>4° Semestre: Subiter - Aplicação Web para sincronização dos dados administrativos, financeiros e operacionais.</a></li></p>
    
 </body>
 </html>
