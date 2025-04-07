@@ -30,7 +30,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- ## :dart: Contribuições Pessoais: 
+ ## :dart: Contribuições Individuais: 
 
 
 **1 Sprint**
