@@ -116,7 +116,7 @@
   
 ---
 
- <h2 align="center"> Git do Projeto</h2>
+ <h2 align="center"> GITHUB do Projeto</h2>
  <h3 align="center">https://github.com/Doc-Docker/APISubiter</h3>
  
    
