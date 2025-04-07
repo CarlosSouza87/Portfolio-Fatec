@@ -135,7 +135,7 @@ Possuíamos uma base de dados minimamente volumosa, e precisávamos calcular div
 </tr>
   </table>
 
-<h2 align="center"> GIT DO PROJETO</h2>
+<h2 align="center"> GITHUB DO PROJETO</h2>
 
  <h3 align="center">https://github.com/Doc-Docker/APIMidAll</h3>
  </body>
