@@ -4,7 +4,7 @@
  <h1 align="center"> 
  <h2 align="center">:office: EMPRESA - MIDALL</h2>
  
-  <h2 style="font-family:roboto;"> Resumo do Projeto :clipboard:</h2>
+# :clipboard: Desafio/Projeto
   
   <p align="justify" style="font-family:roboto;"> O projeto visa resolver o problema da empresa MidAll relacionado à criação de promoções em seu e-commerce. A solução proposta foi desenvolver um mini motor de regras que permitiu a flexibilidade e rápida atualização das mecânicas das promoções no sistema. Isso foi feito por meio de uma interface onde as regras das promoções poderiam ser cadastradas e aplicadas automaticamente quando os itens fossem adicionados ao carrinho de compras. Essa abordagem ofereceu agilidade na configuração e adaptação das promoções, proporcionando uma experiência personalizada aos clientes.
 
