@@ -76,35 +76,34 @@ Possuíamos uma base de dados minimamente volumosa, e precisávamos calcular div
     <tr>
       <th width="270px">Tecnologia/Metodologia</th>
       <th width="85px">Nota</th>
-      <th width="230px">Classificação</th>
-    </tr>
+     </tr>
     <tr>
       <td>Metodologia Ágil Scrum</td>
       <td>★★★★★</td>
     </tr>
     <tr>
       <td>Microsoft SQL Server</td>
-      <td>★★★☆☆</td>
+      <td>★★★★★</td>
     </tr>	
     <tr>
       <td>Java</td>
-      <td>★★☆☆☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
     <tr>
       <td>Angular</td>
-      <td>★★★☆☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
     <tr>
       <td>CSS</td>
-      <td>★★★★★</td>
+      <td>★☆☆☆☆</td>
     </tr>
     <tr>
       <td>Bootstrap</td>
-      <td>★★★★☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
     <tr>
       <td>Figma</td>
-      <td>★★★★☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
   </table>
   
