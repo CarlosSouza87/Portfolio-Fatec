@@ -56,20 +56,22 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 
  ## :dart: Contribuições Pessoais: 
 
+ **1° Sprint**
+- Instalação do Banco de dados Postgres;
+- Criação e modelagem do banco de dados do banco de dados;
+- Criação das tabelas e colunas definidas.
 
- 1° Sprint - Instalação do Banco de dados Postgres;
-		   - Criação e modelagem do banco de dados do banco de dados;
-		   - Criação das tabelas e colunas definidas;
+ **2° Sprint**  
+- Apoio na criação da conexão da aplicação ao Banco de dados;
+- Gerenciamento do Banco de dados atraves do seu SGBD.
 
- 2° Sprint - Apoio na criação da conexão da aplicação ao Banco de dados;
-		   - Gerenciamento do Banco de dados atraves do seu SGBD.
+ **3° Sprint**
+ - Auxilio com a montagem do readme e inserção dos dados da Aplicação;
+ - Criação das consultas (queries) necessárias para recuperar os dados e desenvolver procedimentos armazenados (procedures) para a execução eficiente dessas operações;
+ - Ajustes em tabelas e colunas do banco de dados.
 
-3° Sprint - Auxilio com a montagem do readme e inserção dos dados da Aplicação:
-          - Criação das consultas (queries) necessárias para recuperar os dados e desenvolver procedimentos armazenados (procedures)
-		  para a execução eficiente dessas operações.;
-		  - Ajustes em campos e tabelas
-
-4° Sprint - Apresentação final da aplicação ao cliente.
+ **4° Sprint**
+ - Apresentação final da aplicação ao cliente.
 		  
 </details>
 
