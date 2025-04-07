@@ -1,10 +1,10 @@
 <html>
 <body>
- <h1 align="center"> API 4º Semestre </h1>
+ <h1 align="center"> API 3º Semestre</h1>
+ <h1 align="center"> 
+ <h2 align="center">:office: EMPRESA - SUBITER</h2>
  
- <h2> Parceiro Acadêmico: <a href="https://www.subiter.com/">Subiter</a></h2>
- 
-<img src="https://github.com/BryanRibeiro/Portfolio-Projetos/blob/main/images/logosubiter.png" height="150" width="250"/>
+# :clipboard: Desafio/Projeto
   
   <h2 style="font-family:roboto;"> Resumo do Projeto :clipboard:</h2>
   
