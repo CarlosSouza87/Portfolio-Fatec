@@ -4,7 +4,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3 align="center"> 
- EQUIPE - Devstore
+ EQUIPE - Alpha Team
 <h3 align="center"> 
 
 ![logo_projeto](https://github.com/Orlandi-a11/PortifolioFatecApi/blob/main/IMG/API_2_logo.jpeg)
@@ -123,6 +123,5 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 
 <h2 align="center"> GIT DO PROJETO</h2>
 
-<h5 align="center"><a href="(https://github.com/apibanco/Vigilant)"> </h5>
-
-
+ <h3 align="center">https://github.com/apibanco/Vigilant</h3>
+ 
