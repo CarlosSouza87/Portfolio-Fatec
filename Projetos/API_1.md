@@ -9,7 +9,7 @@
  
 ![logo_projeto](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Vaidevan.png)
 
-# :clipboard: Proposta
+# :clipboard: Desafio/Projeto
 Este projeto tem como objetivo principal a integração eficiente entre motoristas e passageiros, visando aprimorar significativamente a experiência de transporte para ambas as partes. Por meio dessa integração, os motoristas foram capacitados a acessar as informações de todos os passageiros de maneira ágil e prática, permitindo uma gestão mais eficaz de suas rotas e viagens. Além disso,informar aos passageiros o horário previsto de chegada com maior precisão, proporcionando uma experiência mais conveniente e confiável.
 
 Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de mensagens padronizadas, o que permitiu aos motoristas notificar os passageiros sobre possíveis imprevistos, mudanças de rota, atrasos ou qualquer outra informação relevante. Isso contribuiu para uma comunicação mais transparente e eficaz entre as partes envolvidas, aumentando a confiabilidade do serviço de transporte.
