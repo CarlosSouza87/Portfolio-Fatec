@@ -38,128 +38,27 @@
   </ul>
   
  ## :dart: Contribuições Individuais:
-   
-  <h3> Atribuições como Desenvolvedor Front-end</h3>
 
-Fui responsável por ajudar no desenvolvimento front-end da aplicação. Por ser o terceiro semestre do curso, já havia construído uma base de conhecimentos necessários para desenvolver o projeto, embora o uso de tecnologias diferentes das apresentadas anteriormente tenha dificultado o processo de desenvolvimento.
+ **1° Sprint**
+- instalação e configuração do banco de dados Microsoft SQL na Microsoft Azure;
+- Criação e modelagem do banco de dados;
+- Criação das tabelas e colunas definidas,efetivamente no banco de dados.
   
-Sendo responsável pelo desenvolvimento do front-end do sistema, implementei serviços de cadastro, leitura e remoção de dados coletados pela aplicação. Também, prestei apoio na criação das interfaces gráficas com o Java e no versionamento do projeto com a tecnologia Git.
-  
-</details>   
 
-Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
+ **2° Sprint**  
+- Apoio na criação da conexão da aplicação ao Banco de dados;
+- Gerenciamento do Banco de dados atraves do seu SGBD;
+- Busca de soluções devido a limitação de utilização de transações na Microsoft Azure;
+- Desenvolvimento em conjunto das diversas telas de cadastros do sistema.
 
-Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
-   
- <details>
-      <summary>Código em JavaScript - Informações</summary>
- 
-   ```js
-   
-        this.total = this.noDiscount += (element.price  * element.quantidade);
+ **3° Sprint**
+ - Auxilio com a montagem do readme e inserção dos dados da Aplicação;
+ - Testes de usabilidade do sistema e apoio nas correções do projeto;
+ - Ajustes em tabelas e colunas do banco de dados;
+ - Apoio a equipe em soluções de erros no desenvolvimento da aplicação;
+ - Apresentação ao cliente da versão final da aplicação.
+ </details>   
 
-        this.service.getDiscount(this.id, this.quantidade, this.total, this.categoria).subscribe(
-            response =>
-            { const product : Product = new Product();
-              this.discount = response;
-              this.product.discount = this.discount
-              this.finalPrice = this.finalPrice += (element.price * element.quantidade)-(this.discount)
-              console.log("teste", this.categoria)
-            errorResponse => console.log(errorResponse)
-        })
-    });
-         
-         ...
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
-   ```
-   - Esse método é responsável por passar os parâmetros para o back-end, processar a informação e direcionar o retorno para a camada de visualização do usuário,
-  sendo um trecho importante pois enviar dados, processa o retorno e já devolve os resultados para usuário.
-
-
-Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes da implementação do método responsável por enviar a requisição para o back-end. 
-
-</details>   
-
-<br>
-
-Implementação das telas de cadastro de produtos; </br>
-   Desenvolvimento do formulário de cadastro de produtos, criação da classe de services para envio da requisição POST com objeto do tipo produto.
-   
-   <details>
-      <summary>Código em TypeScript - Função na classe service para criação e atualização de produtos </summary>
-      
-          onSubmit(){
-
-           if(this.id){
-             this.service.update(this.id, this.product)
-             .subscribe( res => {
-               this.success = true;
-               this.errors = null;
-             }
-             )
-           }
-           else{
-
-             this.service
-               .insert(this.product)
-               .subscribe( res =>{
-                 this.success = true;
-                 this.errors = null;
-
-               }, errorRes =>{
-                 this.success = false;
-                 this.errors = errorRes.error.errors
-
-               }
-
-               )
-           }
-
-
-         }
-   </details>
-   
-<br>
-   
-Implementação da interface do carrinho de compras;</br>
-   Desenvolvimento de uma tela para mostrar todos os produtos selecionados pelo usuário no sistema
-   <details>
-      <summary>Código em HTML - Exibição dos produtos </summary>
-      
- ```html
-          <table class="table table-condensed table-hover">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Discount</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let p of products">
-                        <td>{{ p.name }}</td>
-                        <td>{{ p.price }}</td>
-                        <td>{{ p.quantidade}}</td>
-                        <td>-{{ p.discount }}</td>
-
-                        <td>
-                            <button  class="btn btn-warning" (click)="deleteProduct(p)">
-                                <i class="fa fa-trash"></i>
-                                Delete
-                            </button>
-                        </td>
-
-
-                    </tr>
-                </tbody>
-                
-            </table>
- ```
- 
-   </details>
   
 O desafio foi diferente do projeto anterior, pois deveríamos atender os requisitos necessários e ter uma comunicação ativa com o cliente a fim de produzir entregas de valores em cada etapa do processo, por isso ajudei a gerenciar a equipe utilizando a metodologia ágil Scrum.
 
