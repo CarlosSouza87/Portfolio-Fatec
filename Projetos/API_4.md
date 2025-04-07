@@ -6,11 +6,10 @@
  
 # :clipboard: Desafio/Projeto
   
-  <h2 style="font-family:roboto;"> Resumo do Projeto :clipboard:</h2>
-  
+
   <p align="justify" style="font-family:roboto;"> O projeto tem como objetivo solucionar o desafio de sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços prestados pela empresa. A falta de organização desses dados resulta em lentidão para atender chamados e dificuldades na interpretação dos indicadores comerciais e financeiros. Implementamos um sistema de gerenciamento integrado que centralizou informações relevantes por meio de um banco de dados robusto. Isso permitiu uma análise precisa dos indicadores comerciais e financeiros, facilitando a tomada de decisões estratégicas.
 
-<h2 style="font-family:roboto;"> Tecnologias Adotadas :computer:</h2>
+<h2 style="font-family:roboto;"> Tecnologias Utilizadass :computer:</h2>
  
  <div style="display: inline_block"><br> 
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/oracle/oracle-original.svg" width="100"    height="100" />	 
