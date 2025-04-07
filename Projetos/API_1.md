@@ -33,20 +33,19 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
  ## :dart: Contribuições Pessoais: 
 
 
-<summary> 1 Sprint: Prototipação da aplicação: </summary>
- 
+**1 Sprint**
 - Auxilio na prototipagem de algumas telas da nosso aplicativo (vai deVan), utilizei o editor grafico Figma.
 
-2° Sprint: Criação das Telas no App Inventor:
-- Desenvolvi as telas de cadastro (de usuario, e passageiro), Tela de login (usuario e passageiro) e Todas baseadas no prototipo (feito na primeira sprint);
+**2° Sprint**
+- Desenvolvimento das telas de cadastro (usuario e passageiro);
+- Tela de login (usuario e passageiro).
 
-3° Sprint: Integração das telas com o Banco de Dado Firebase:
-- Integração da telas com o Banco de Dado Firebase, sendo possivel guardar os dados do motorista, e sua lista de passageiro, para assim melhor gerenciar;
+**3° Sprint**
+- Integração da telas com o Banco de Dado Firebase, sendo possivel guardar os dados do motorista, e sua lista de passageiro, para assim melhor gerenciar.
 
-4° Sprint: Video ilustrativo do funcionamento do aplicativo:
-- Realizei os videos ilustrativos da aplicação em funcionamento com explicação para a compreensão melhor de todos e com a aplicação finalizada.
-
-5° Apresentação da evolução do aplicativo ao cliente em todas as sprints. 
+**4° Sprint**
+- Criação dos videos ilustrativos da aplicação em funcionamento;
+- Apresentação da evolução do aplicativo ao cliente em todas as sprints. 
 
 <br></br>
 
