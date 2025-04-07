@@ -35,7 +35,7 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- ## :dart: Contribuições Pessoais: 
+ ## :dart: Contribuições Individuais: 
 
  **1° Sprint**
 - Instalação do Banco de dados Postgres;
