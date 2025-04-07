@@ -1,14 +1,9 @@
 <html>
 <body>
- <h1 align="center"> API 3º Semestre - 01/2022</h1>
+ <h1 align="center"> API 3º Semestre</h1>
  <h1 align="center"> 
-<a href="https://github.com/Doc-Docker/APIMidAll"><img src="https://img.shields.io/badge/GitHub-Repositório Projeto-181717?style=for-the-badge&logo=github"></a>
-</h1>
+ <h2 align="center">:office: EMPRESA - MIDALL</h2>
  
- <h2> Parceiro Acadêmico: <a href="https://midall.com.br/">MidAll [B]</a></h2>
- 
-<img src="https://github.com/BryanRibeiro/Portfolio-Projetos/blob/main/images/logo%20midall.png" height="150" width="230"/>
-  
   <h2 style="font-family:roboto;"> Resumo do Projeto :clipboard:</h2>
   
   <p align="justify" style="font-family:roboto;"> O projeto visa resolver o problema da empresa MidAll relacionado à criação de promoções em seu e-commerce. A solução proposta foi desenvolver um mini motor de regras que permitiu a flexibilidade e rápida atualização das mecânicas das promoções no sistema. Isso foi feito por meio de uma interface onde as regras das promoções poderiam ser cadastradas e aplicadas automaticamente quando os itens fossem adicionados ao carrinho de compras. Essa abordagem ofereceu agilidade na configuração e adaptação das promoções, proporcionando uma experiência personalizada aos clientes.
