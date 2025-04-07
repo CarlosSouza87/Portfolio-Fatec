@@ -134,7 +134,6 @@ Possuíamos uma base de dados minimamente volumosa, e precisávamos calcular div
   <td>Adotei práticas de desenvolvimento acessível, garantindo que as aplicações sejam utilizáveis por todas as pessoas, independentemente de suas habilidades.</td>
 </tr>
   </table>
-    -------------------------------------------------------------------------------------------------------------------------------------
 
 <h2 align="center"> GIT DO PROJETO</h2>
 
