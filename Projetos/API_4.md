@@ -35,9 +35,9 @@
   </li>
   <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>: É um ambiente de desenvolvimento integrado (IDE) altamente produtivo para programação em diversas linguagens.</p></li>
   </li>
-
   </ul>
- ## :dart: Contribuições Individuais: 
+
+ ## :dart: Contribuições Individuais:
 
  **1° Sprint**
 - Instalação do Banco de dados Postgres;
