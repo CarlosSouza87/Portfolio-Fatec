@@ -1,5 +1,5 @@
 <h1 align="center"> API -  2º Semestre</h1>
-<h2 align="center">:office: EMPRESA - NECTO</h2>
+<h2 align="center">:office: EMPRESA - NECTO SSYSTEMS</h2>
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -7,8 +7,7 @@
  EQUIPE - Alpha Team
 <h3 align="center"> 
 
-![logo_projeto](https://github.com/Orlandi-a11/PortifolioFatecApi/blob/main/IMG/API_2_logo.jpeg)
-
+![logo_projeto](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Alpha_Azul.jpg)
 
 
 # :clipboard: Proposta
@@ -83,20 +82,16 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
       <th width="300px">Classificação</th>
     </tr>
     <tr>
-      <td>PostGisAdmin</td>
-      <td>★★★☆☆</td>
-    </tr>
-    <tr>
-      <td>POSTGREE</td>
-      <td>★★☆☆☆</td>
+      <td>POSTGRESQL</td>
+      <td>★★★★☆</td>
     </tr>	
-    <tr>
+   <tr>
       <td>JAVA</td>
-      <td>★★☆☆☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
     <tr>
       <td>GITHUB</td>
-      <td>★★★★☆</td>
+      <td>★★☆☆☆</td>
     </tr>
   </table>
 
@@ -108,7 +103,7 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
     </tr>
     <tr>
       <td>Comunicação</td>
-      <td>Tive de desenvolver bastante para compreender o que deveria ser organizado e implementado na escrita do projeto.</td>
+      <td>Utilizei minha boa comunicação com a equipe para juntos compreender o que deveria ser e implementado na escrita do projeto.</td>
     </tr>
     <tr>
       <td>Adaptabilidade</td>
@@ -116,7 +111,7 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
     </tr>
     <tr>
       <td>Trabalho em Equipe</td>
-      <td>Desenvolvi bastante esta Soft Skills para sanar todas as duvidas ao decorrer do projeto e alem disso a comunicação entre o grupo para imediatamente instruir o grupo do que estava sendo feito e o que se deve melhorar.</td>
+      <td>Desenvolvi bastante esta Soft Skills para sanar todas as duvidas ao decorrer do projeto e alem disso a comunicação entre o grupo para imediatamente instruir o grupo do que estava sendo feito e no que deverimos nos aprimorar.</td>
   </table>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
