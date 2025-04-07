@@ -37,8 +37,8 @@
 
   </ul>
   
-  <h2 style="font-family:roboto;"> Contribuições Individuais :dart:</h2>
-  
+ ## :dart: Contribuições Individuais:
+   
   <h3> Atribuições como Desenvolvedor Front-end</h3>
 
 Fui responsável por ajudar no desenvolvimento front-end da aplicação. Por ser o terceiro semestre do curso, já havia construído uma base de conhecimentos necessários para desenvolver o projeto, embora o uso de tecnologias diferentes das apresentadas anteriormente tenha dificultado o processo de desenvolvimento.
