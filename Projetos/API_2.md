@@ -3,12 +3,6 @@
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h3 align="center"> 
- EQUIPE - Alpha Team
-<h3 align="center"> 
-
-![logo_projeto](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Alpha_Azul.jpg)
-
 
 # :clipboard: Desafio/Projeto
 Neste projeto foi proposto a construção de uma integração para a coleta de informações diretamente dos servidores, visando a criação de uma série histórica de dados. A concepção por trás disso era criar uma aplicação que pudesse realizar a coleta regular de métricas de um ou mais Sistemas Gerenciadores de Banco de Dados remotos. Essa ferramenta é projetada para fornecer informações valiosas ao usuário, permitindo que tomem decisões informadas em relação à manutenção, balanceamento, escalabilidade e melhorias necessárias nos seus SGBDs, bancos de dados e infraestrutura de servidores.
