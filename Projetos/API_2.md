@@ -1,5 +1,5 @@
 <h1 align="center"> API -  2º Semestre</h1>
-<h2 align="center">:office: EMPRESA - NECTO SSYSTEMS</h2>
+<h2 align="center">:office: EMPRESA - NECTO SYSTEMS</h2>
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
