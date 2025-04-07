@@ -65,12 +65,12 @@
       <th width="85px">Nota</th>
     </tr>
     <tr>
-      <td>Metodologia Scrum - Product Owner</td>
-      <td>★★★★☆</td>
+      <td>Metodologia Scrum -</td>
+      <td>★★★★★</td>
     </tr>
     <tr>
       <td>Oracle Cloud</td>
-      <td>★★★☆☆</td>
+      <td>★★★★★</td>
      </tr>	
     <tr>
       <td>Java</td>
@@ -82,7 +82,7 @@
      </tr>
    <tr>
       <td>Docker</td>
-      <td>★★★★☆</td>
+      <td>★☆☆☆☆</td>
    </tr>
    <tr>
       <td>Bootstrap</td>
@@ -102,23 +102,15 @@
     </tr>
     <tr>
       <td>Responsabilidade</td>
-      <td>Assumi o cargo de Product Owner pela primeira vez.</td>
-    </tr>
-    <tr>
-      <td>Visão de Negócio</td>
-      <td>Compreendi melhor os problemas e expectativas do cliente, aplicando o Product Backlog Building.</td>
-    </tr>
-    <tr>
-      <td>Comunicação</td>
-      <td>Precisei me comunicar com o cliente com resiliência, e transmitir os requisitos para equipe dev.</td>
+      <td>Trabalhei como Scrum Master nesse projeto,apoiando os membros do grupo em suas necessidades.</td>
     </tr>
     <tr>
       <td>Organização</td>
-      <td>Precisei organizar as tarefas do time e definir as prioridades.</td>
+      <td>Em alguns momentos foi necessario me impor como Scrum master para manter a equipe motivado e focada nas tarefas do time e apoio para definir as prioridades.</td>
     </tr>
     <tr>
       <td>Planejamento</td>
-      <td>Precisei planejar o escopo do projeto e construir o Product Backlog de uma forma prática.</td>
+      <td>Trabalhei junto ao nosso P.O para garantir o escopo do projeto e construir o Product Backlog de uma forma prática e bem planejada.</td>
     </tr>
   </table>
   
