@@ -1,9 +1,6 @@
 <html>
 <body>
- <h1 align="center"> API 4º Semestre - 02/2022</h1>
-<h1 align="center"> 
-<a href="https://github.com/Doc-Docker/APISubiter"><img src="https://img.shields.io/badge/GitHub-Repositório Projeto-181717?style=for-the-badge&logo=github"></a>
-</h1>
+ <h1 align="center"> API 4º Semestre </h1>
  
  <h2> Parceiro Acadêmico: <a href="https://www.subiter.com/">Subiter</a></h2>
  
