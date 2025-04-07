@@ -17,26 +17,13 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 <br></br>
 ## :desktop_computer: Tecnologias Utilizadas
 <ul>
-<div style="text-align: center;">
-  <div style="margin-top: 10px; font-weight: bold;">BackEnd</div>
-  <div style="display: inline_block">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" width="85" height="85" />
-    <img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" width="85" height="85" />
-  </div>
-</div>
-<div style="text-align: center;">
-  <div style="margin-top: 10px; font-weight: bold;">FrontEnd</div>
-  <div style="display: inline_block">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original-wordmark.svg" width="85" height="85" />
-    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" width="85" height="85" />  
-    <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg" width="85" height="85" />
-  </div>
-</div>
-<div style="text-align: center;">
-  <div style="margin-top: 10px; font-weight: bold;">Banco de Dados</div>
-  <div style="display: inline_block">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" width="85" height="85"/>
-  </div>
+<div style="display: inline_block"><br> 
+ <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" width="100" height="100"/>
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/java/java-original-wordmark.svg" width="100"    height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-original.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
+<img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
 </div>
 </ul>
 
