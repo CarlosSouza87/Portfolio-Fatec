@@ -35,14 +35,14 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 <div style="text-align: center;">
   <div style="margin-top: 10px; font-weight: bold;">Banco de Dados</div>
   <div style="display: inline_block">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" width="85" height="85"/>
   </div>
 </div>
 </ul>
 
 
  <br></br>
- <a href="https://github.com">Github</a>: Esta plataorma foi utilizado como repositorio do projeto. O Github é uma plataforma de gerenciamento de código fonte que permite hospedar, gerenciar e colaborar em projetos de desenvolvimento de software usando o sistema de controle de versão Git.
+ <a href="https://github.com">Github</a>: Esta plataforma foi utilizado como repositorio do projeto. O Github é uma plataforma de gerenciamento de código fonte que permite hospedar, gerenciar e colaborar em projetos de desenvolvimento de software usando o sistema de controle de versão Git.
 <br></br>
 <a href="https://www.postgresql.org">PostgreSQL</a>: Este sistema foi utilizado como Sistema Gerenciador de Banco de Dados (SGBD) do projeto. O PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto que oferece um alto grau de confiabilidade e flexibilidade.
 <br></br>
