@@ -134,6 +134,10 @@ Possuíamos uma base de dados minimamente volumosa, e precisávamos calcular div
   <td>Adotei práticas de desenvolvimento acessível, garantindo que as aplicações sejam utilizáveis por todas as pessoas, independentemente de suas habilidades.</td>
 </tr>
   </table>
-    
-</body>
+    -------------------------------------------------------------------------------------------------------------------------------------
+
+<h2 align="center"> GIT DO PROJETO</h2>
+
+ <h3 align="center">https://github.com/Doc-Docker/APIMidAll</h3>
+ </body>
 </html>
