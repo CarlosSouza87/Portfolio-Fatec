@@ -13,4 +13,6 @@
    para as empresas parceiras academicas.O API(Aprendizado por Projetos Integradores), como é chamado os projetos na Fatec é uma prática 
    muito importante que agrega muito valor e conhecimento na carreira dos alunos.
   Compartilho com voces aqui os projetos do qual participei com meu grupo de amigos acadêmicos,do qual tive muito orgulho em participar.
+
+  
 <br>
