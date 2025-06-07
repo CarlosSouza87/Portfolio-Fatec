@@ -110,16 +110,16 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <th width="300px">Descrição</th>
     </tr>
     <tr>
-      <td>Escuta ativa</td>
-      <td>Desenvolvi a partir do momento que foi necessario compreender as necessidades para a realização das tarefas e para o melhor para a entrega da Equipe.</td>
+      <td>Comunicação Eficaz</td>
+      <td>Trabalhei a capacidade de se expressar verbalmente, de forma clara e concisa, e de ouvir e compreender as mensagens dos integrantes da equipe</td>
     </tr>
     <tr>
-      <td>Pensamento analítico</td>
-      <td>Lidei com desafios e adversidades e as dificuldades de compreensão para ser mais dinamico e simples para o uso da aplicação.</td>
+      <td>Trabalho em Equipe</td>
+      <td>Trabalhei com outros integrantes  para atingir objetivos comuns, respeitando as opiniões e contribuindo para um ambiente de trabalho positivo.</td>
     </tr>
     <tr>
-      <td>Colaboração</td>
-      <td>Realizei tasks de forma harmoniosa e produtiva em equipe, contribuindo com ideias e apoiando os colegas.</td>
+      <td>Liderança</td>
+      <td>Trabalhei na motivação dos integrantes da equipe, influenciando positivamente e contribuindo para o sucesso de todos</td>
   </table>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
