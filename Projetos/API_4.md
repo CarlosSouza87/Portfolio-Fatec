@@ -41,7 +41,7 @@
 
  **1° Sprint**
 - Instalação do Banco de dados Postgres;
-- Criação e modelagem do banco de dados do banco de dados;
+- Criação e modelagem do banco de dados;
 - Criação das tabelas e colunas definidas.
 
  **2° Sprint**  
