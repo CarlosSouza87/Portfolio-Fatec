@@ -74,11 +74,11 @@
      </tr>	
     <tr>
       <td>Java</td>
-      <td>★★★☆☆</td>
+      <td>★☆☆☆☆</td>
      </tr>
     <tr>
       <td>Vue.js</td>
-      <td>★★★☆☆</td>
+      <td>★★☆☆☆</td>
      </tr>
    <tr>
       <td>Docker</td>
@@ -90,7 +90,7 @@
     </tr>
     <tr>
       <td>IntelliJ IDEA</td>
-      <td>★★★☆☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
   </table>
   
