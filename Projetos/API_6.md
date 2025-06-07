@@ -60,7 +60,8 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 	  NU_INDICE_PONTO
 	  CGL_VL_ALTITUDE
 	  VL_VERTICES (Tipo Geometry)
-	A tabela glebas_sp armazena informações relacionadas a glebas de terras, Brasil. Aqui estão algumas explicações para os atributos:
+	A tabela glebas_sp armazena informações relacionadas a glebas de terras, Brasil.
+        Aqui estão algumas explicações para os atributos:
 
 	REF_BACEN: Referência relacionada ao Banco Central (Identificador único para cada registro).
 	NU_ORDEM: Número de ordem.
@@ -70,14 +71,13 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 	CGL_VL_ALTITUDE: Valor da altitude.
 	VL_VERTICES: Dados geométricos representando os vértices (pontos) da gleba.
 
-	No seu caso, a coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações sobre a forma geográfica da gleba do terreno. Isso pode incluir coordenadas espaciais que definem os vértices da gleba,
-	permitindo representar a forma da área de terra no plano geográfico.
+	No seu caso, a coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações
+       sobre a forma geográfica da gleba do terreno. Isso pode incluir coordenadas espaciais que definem os
+       vértices da gleba,permitindo representar a forma da área de terra no plano geográfico.
   
-   ```
-Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.
+      Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.
 
-
-<details open><summary>Informações sobre scripts utilizados para manipulção de dados</summary>
+     <details open><summary>Informações sobre scripts utilizados para manipulção de dados</summary>
 
    ### Script para Coordenadas
      
