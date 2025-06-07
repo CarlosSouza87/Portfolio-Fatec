@@ -100,16 +100,7 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <td>GITHUB</td>
       <td>★★★★☆</td>
     </tr>
-     <tr>
-      <td>CSS</td>
-      <td>☆☆☆☆☆</td>
-    </tr>
-    <tr>
-      <td>VUEJS</td>
-      <td>★☆☆☆☆</td>
-    </tr>
-
-
+     
   </table>
 
  <h3 align="center">Soft Skills</h3>
