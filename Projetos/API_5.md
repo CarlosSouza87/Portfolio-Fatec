@@ -10,7 +10,7 @@
 ![logo_projeto](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/logo-techNinjass.png)
 
 
-# :clipboard: Proposta
+# :clipboard: DESAFIO/PROJETO
 Este projeto foi proposto  com o intuito de simplificar de processo de transferencia de dados,  o desenvolvimento de uma aplicação como serviço, que permitirá aos usuários transferir esses arquivos diretamente de uma nuvem para uma outra.A interface da aplicação será intuitiva, consistindo apenas em um menu de configuração no qual os usuários poderão definir os parâmetros necessários para iniciar o processo de download de maneira automática. Esses parâmetros incluirão informações como o tipo de arquivo desejado, a frequência de download, e a pasta de destino na nuvem.
 
 Além da automação do processo de download, a aplicação será equipada com um sistema de alertas. Em caso de qualquer erro no processamento, o usuário receberá notificações imediatas, garantindo que problemas sejam identificados e resolvidos rapidamente.Uma característica crucial do nosso sistema será a capacidade de salvar os metadados de cada arquivo baixado. Esses metadados serão posteriormente utilizados para construir um dashboard completo, proporcionando aos usuários uma visão abrangente da execução do serviço. O dashboard incluirá informações como a quantidade de arquivos baixados, tempo médio de processamento, e eventuais falhas ocorridas.
