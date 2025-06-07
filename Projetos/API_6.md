@@ -173,7 +173,7 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 
 </details> 
 
-<details open><summary>Querys para retorno de informações </summary>
+#### Querys para retorno de informações 
 
    ### Query Retorno Glebas
      
