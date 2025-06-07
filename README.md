@@ -2,7 +2,7 @@
 
 <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/vv.jpg" height="250" width="250"/>
 
-## Introdução
+## Quem sou eu?
 
    Olá, sou Carlos Fernando, tenho 55 anos e estou atualmente na fase final da minha graduação em Banco de Dados. Atuo como Desenvolvedor Full Stack, com foco em Node e React, dentro do contexto do SAP Business One. Anteriormente, desempenhei o papel de Analista Desenvolvedor, trabalhando com linguagens como NodeJS, C#, e tenho experiência sólida em bancos de dados SQL e SAP Hana.
 
