@@ -167,9 +167,10 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
    Leitura do arquivo CSV usando o pandas e armazenamento dos dados em um DataFrame (df).
 
  ## Criação de Objetos Geométricos e Inserção no Banco de Dados:
-  Um loop através do DataFrame, onde para cada linha, são criados objetos geométricos do tipo Point a partir das colunas VL_LATITUDE e VL_LONGITUDE.
-  Um objeto Gleba é criado para cada linha do DataFrame, e a coluna VL_VERTICES é preenchida com o objeto geométrico correspondente.
-  Os objetos são adicionados à sessão e, ao final do loop, as alterações são confirmadas no banco de dados. 
+  Um loop através do DataFrame, onde para cada linha, são criados objetos geométricos do tipo Point a partir 
+  das colunas VL_LATITUDE e VL_LONGITUDE.
+  Um objeto Gleba é criado para cada linha do DataFrame, e a coluna VL_VERTICES é preenchida com o objeto geométrico
+  correspondente.Os objetos são adicionados à sessão e, ao final do loop, as alterações são confirmadas no banco de dados. 
 
 </details> 
 
@@ -225,7 +226,10 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
   
    ```
  #### Seleção de Dados da Tabela Glebas:
-    A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp, ordenados pelo NU_INDICE_PONTO.
+    A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP 
+    ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp,
+    ordenados pelo NU_INDICE_PONTO.
+    
     Essa subconsulta é renomeada como Glebas e serve como base para a junção posterior.
 
 #### Junção com a Tabela saida5:
