@@ -85,7 +85,7 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <th width="300px">Classificação</th>
     </tr>
     <tr>
-      <td>Metodologia Scrum - Product Owner</td>
+      <td>Metodologia Scrum</td>
       <td>★★★★★</td>
     </tr>
     <tr>
