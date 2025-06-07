@@ -146,10 +146,6 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 	session.commit()
 	session.close()
 
-  
-   ```
-
-
 <br></br>
 
 <h3 align="center"> Hard Skills </h3>
