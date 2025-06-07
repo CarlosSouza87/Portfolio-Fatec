@@ -110,7 +110,7 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
     </tr>
  <tr>
       <td>VUEJS</td>
-      <td>★★★★☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
 
 
