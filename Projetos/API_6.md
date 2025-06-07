@@ -48,8 +48,6 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 
 ### Modelo Lógico
      
-   ```
-	
 	Entidade: Gleba_SP
 
 	Atributos:
@@ -81,7 +79,7 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 
    ### Script para Coordenadas
      
-   ```python
+      Python
 	
  	import pandas as pd
 	from shapely.geometry import Point
