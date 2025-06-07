@@ -11,10 +11,10 @@
 
 
 # :clipboard: DESAFIO/PROJETO
-Este projeto foi proposto  com o intuito de simplificar de processo de transferencia de dados,  o desenvolvimento de uma aplicação como serviço, que permitirá aos usuários transferir esses arquivos diretamente de uma nuvem para uma outra.A interface da aplicação será intuitiva, consistindo apenas em um menu de configuração no qual os usuários poderão definir os parâmetros necessários para iniciar o processo de download de maneira automática. Esses parâmetros incluirão informações como o tipo de arquivo desejado, a frequência de download, e a pasta de destino na nuvem.
 
-Além da automação do processo de download, a aplicação será equipada com um sistema de alertas. Em caso de qualquer erro no processamento, o usuário receberá notificações imediatas, garantindo que problemas sejam identificados e resolvidos rapidamente.Uma característica crucial do nosso sistema será a capacidade de salvar os metadados de cada arquivo baixado. Esses metadados serão posteriormente utilizados para construir um dashboard completo, proporcionando aos usuários uma visão abrangente da execução do serviço. O dashboard incluirá informações como a quantidade de arquivos baixados, tempo médio de processamento, e eventuais falhas ocorridas.
-O dashboard não será apenas uma ferramenta de monitoramento, mas também um recurso valioso para análise de resultados e indicadores. Os usuários poderão extrair insights importantes sobre a eficiência do processo de download, identificar padrões de uso e tomar decisões informadas para aprimorar ainda mais a automação.
+O projeto consiste na automação do processo de download de arquivos armazenados na nuvem, transferindo-os para outra nuvem. Isso é realizado por meio do desenvolvimento de uma aplicação como serviço, que oferece um menu de configuração simples para os usuários. Os parâmetros inseridos nesse menu são utilizados para automatizar o download dos arquivos, com a aplicação gerando alertas em caso de falhas no processamento. A aplicação é executada em um servidor local e conta com telas dedicadas à configuração do sistema e à definição dos dados de acesso à API. O sistema emite alertas no sistema operacional para informar sobre novos arquivos baixados e mantém um histórico desses downloads.
+
+Além disso, foi construída uma API que funciona como o serviço responsável por buscar os arquivos de forma automática, seguindo as configurações previamente definidas pelo usuário. Os metadados dos arquivos são salvos para a criação de um dashboard que permite monitorar a execução do serviço, analisar resultados e visualizar indicadores de desempenho.
 
 ## :desktop_computer: Tecnologias Utilizadas
 <ul>
