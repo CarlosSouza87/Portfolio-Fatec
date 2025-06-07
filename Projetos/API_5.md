@@ -119,10 +119,5 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
   </table>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-<h2 align="center"> GIT DO PROJETO</h2>
-
-<h5 align="center"><a href="https://github.com/TechNinjass"><img src="https://img.shields.io/badge/GitHub-Repositório Projeto-181717?style=for-the-badge&logo=github"></a>
-</h5>
-
-
+ <h2 align="center"> GITHUB DO PROJETO</h2>
+ <h3 align="center">https://github.com/TechNinjass</h3>
