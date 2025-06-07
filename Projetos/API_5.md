@@ -84,6 +84,10 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <td>Microsof Azure</td>
       <td>★★★★★</td>
     </tr>	
+   <tr>
+      <td>Microsof SQL SERVER</td>
+      <td>★★★★★</td>
+    </tr>	
     <tr>
       <td>Python</td>
       <td>★★☆☆☆</td>
