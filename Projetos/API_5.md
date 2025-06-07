@@ -120,4 +120,4 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  <h2 align="center"> GITHUB DO PROJETO</h2>
- <h3 align="center">https://github.com/TechNinjass</h3>
+ <h3 align="center">https://github.com/TechNinjass/midall-parent</h3>
