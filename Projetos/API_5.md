@@ -2,14 +2,6 @@
 <h2 align="center">:office: EMPRESA - MIDALL </h2>
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h3 align="center"> 
- EQUIPE - TECHNINJAS
-<h3 align="center"> 
-
-![logo_projeto](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/logo-techNinjass.png)
-
-
 # :clipboard: DESAFIO/PROJETO
 
 O projeto consiste na automação do processo de download de arquivos armazenados na nuvem, transferindo-os para outra nuvem. Isso é realizado por meio do desenvolvimento de uma aplicação como serviço, que oferece um menu de configuração simples para os usuários. Os parâmetros inseridos nesse menu são utilizados para automatizar o download dos arquivos, com a aplicação gerando alertas em caso de falhas no processamento. A aplicação é executada em um servidor local e conta com telas dedicadas à configuração do sistema e à definição dos dados de acesso à API. O sistema emite alertas no sistema operacional para informar sobre novos arquivos baixados e mantém um histórico desses downloads.
