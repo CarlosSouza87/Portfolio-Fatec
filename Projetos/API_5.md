@@ -104,11 +104,7 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <td>CSS</td>
       <td>☆☆☆☆☆</td>
     </tr>
-      <tr>
-      <td>JAVASCRIT</td>
-      <td>★☆☆☆☆</td>
-    </tr>
- <tr>
+    <tr>
       <td>VUEJS</td>
       <td>★☆☆☆☆</td>
     </tr>
