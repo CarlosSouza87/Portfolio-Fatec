@@ -146,6 +146,106 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 	session.commit()
 	session.close()
 
+ ## Utilização de Bibliotecas:
+  pandas: Usada para manipulação de dados, especialmente para ler e escrever dados em formato de DataFrame.
+  shapely.geometry.Point: Usada para representar objetos geométricos do tipo ponto.
+  sqlalchemy: Uma biblioteca SQL para Python, usada para interagir com o banco de dados.
+  declarative_base: Usada para criar classes de mapeamento ORM.
+  sessionmaker: Usada para criar instâncias de sessão para interação com o banco de dados.
+
+ ## Definição da Classe de Tabela:
+  declarative_base: Função que retorna uma classe base para declarar modelos ORM.
+  Gleba: Classe que herda de Base e representa a tabela glebas_sp no banco de dados.
+
+ ## Criação da Conexão com o Banco de Dados:
+  Criação de uma instância de Engine do SQLAlchemy para interagir com o banco de dados MySQL.
+
+ ## Criação da Tabela no Banco de Dados:
+   Criação da tabela glebas_sp no banco de dados se ela não existir.
+
+ ## - Leitura do Arquivo CSV:
+   Leitura do arquivo CSV usando o pandas e armazenamento dos dados em um DataFrame (df).
+
+ ## Criação de Objetos Geométricos e Inserção no Banco de Dados:
+  Um loop através do DataFrame, onde para cada linha, são criados objetos geométricos do tipo Point a partir das colunas VL_LATITUDE e VL_LONGITUDE.
+  Um objeto Gleba é criado para cada linha do DataFrame, e a coluna VL_VERTICES é preenchida com o objeto geométrico correspondente.
+  Os objetos são adicionados à sessão e, ao final do loop, as alterações são confirmadas no banco de dados. 
+
+</details> 
+
+<details open><summary>Querys para retorno de informações </summary>
+
+   ### Query Retorno Glebas
+     
+   ```MYSQL
+	
+	SELECT 
+	    Glebas.REF_BACEN,
+	    Glebas.VL_VERTICES,
+	    S5.DT_EMISSAO AS DATA_EMISSAO_REFBACEN,
+	    CASE 
+	        WHEN S5.CD_ESTADO = 'SP' THEN 'São Paulo'
+	        ELSE S5.CD_ESTADO 
+	    END AS ESTADO,
+	    GARAN_EMPREEND.DESCRICAO AS TIPO_SEGURO,
+	    S5.DT_FIM_PLANTIO AS DATA_PLANTIO,
+	    GRAO_IRRIG.DESCRICAO AS TIPO_IRRIGACAO,
+	    GRAO.DESCRICAO AS TIPO_GRAO,
+	    S5.VL_ALIQ_PROAGRO AS VALOR_ALIQUOTA,
+	    S5.VL_JUROS AS JUROS_INVESTIMENTO,
+	    S5.VL_RECEITA_BRUTA_ESPERADA AS RECEITA_BRUTA_ESTIMADA,
+	    S5.DT_FIM_COLHEITA AS DATA_FIM_COLHEITA
+	FROM (
+	    SELECT 
+	        GLP.REF_BACEN,
+	        GLP.VL_VERTICES
+	    FROM 
+		techdata.glebas_sp GLP
+	    ORDER BY 
+		GLP.NU_INDICE_PONTO
+	) AS Glebas
+	JOIN techdata.saida5 S5 ON S5.REF_BACEN = Glebas.REF_BACEN
+	JOIN  techvision.grao_semente GRAO ON GRAO.CODIGO = S5.CD_TIPO_GRAO_SEMENTE
+	LEFT JOIN  techvision.tipo_irrigacao GRAO_IRRIG ON GRAO_IRRIG.CODIGO = S5.CD_TIPO_IRRIGACAO
+	LEFT JOIN (
+	    SELECT 
+	        CODIGO, 
+		DESCRICAO
+	    FROM 
+		techvision.tipo_garantia_empreendimento
+	) AS GARAN_EMPREEND ON GARAN_EMPREEND.CODIGO = S5.CD_TIPO_SEGURO
+	GROUP BY
+	    Glebas.REF_BACEN, S5.DT_EMISSAO, 		
+	    S5.CD_ESTADO, GARAN_EMPREEND.DESCRICAO, 
+	    GRAO_IRRIG.DESCRICAO, GRAO.DESCRICAO,
+	    S5.DT_FIM_PLANTIO, S5.CD_TIPO_IRRIGACAO, 
+	    S5.VL_ALIQ_PROAGRO,	S5.CD_TIPO_CULTIVO, 
+	    S5.VL_JUROS, S5.VL_RECEITA_BRUTA_ESPERADA, 
+	    S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
+  
+   ```
+ #### Seleção de Dados da Tabela Glebas:
+    A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp, ordenados pelo NU_INDICE_PONTO.
+    Essa subconsulta é renomeada como Glebas e serve como base para a junção posterior.
+
+#### Junção com a Tabela saida5:
+    A consulta principal junta a subconsulta Glebas com a tabela techdata.saida5 usando a condição S5.REF_BACEN = Glebas.REF_BACEN.
+    Além disso, são realizadas junções adicionais com as tabelas techvision.grao_semente, techvision.tipo_irrigacao e techvision.tipo_garantia_empreendimento.
+
+#### Seleção de Campos e Manipulação de Dados:
+    A consulta seleciona vários campos, incluindo REF_BACEN, VL_VERTICES, DT_EMISSAO, CD_ESTADO, e outros.
+    A cláusula CASE é usada para alterar o valor da coluna ESTADO dependendo do valor de CD_ESTADO, renomeando o estado "SP" para "São Paulo".
+
+#### Agrupamento e Funções de Agregação:
+    Os resultados são agrupados usando a cláusula GROUP BY com base em várias colunas, incluindo REF_BACEN, DT_EMISSAO, CD_ESTADO, e outros.
+    Funções de agregação, como SUM ou AVG, não estão presentes na consulta, mas poderiam ser adicionadas se necessário.
+
+#### Resultados da Consulta:
+    A consulta retorna informações sobre glebas agrícolas, suas safras associadas, tipos de grãos, informações sobre irrigação, seguro agrícola e outros detalhes relevantes.
+    Os resultados são organizados de acordo com as colunas especificadas na cláusula GROUP BY.
+
+</details> 
+
 <br></br>
 
 <h3 align="center"> Hard Skills </h3>
