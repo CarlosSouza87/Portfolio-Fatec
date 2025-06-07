@@ -56,9 +56,7 @@
  **4° Sprint**
  - Apresentação final da aplicação ao cliente.
   
-  <h2 style="font-family:roboto;"> Contribuições Individuais :dart:</h2>
-
-  <h3 align="center"> Hard Skills </h3>
+   <h3 align="center"> Hard Skills </h3>
   <table align="center">
     <tr>
       <th width="290px">Tecnologia/Metodologia</th>
