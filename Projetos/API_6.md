@@ -5,12 +5,9 @@
 
 # :clipboard: Desafio/Projeto
 
-Neste projeto, foi desenvolvido a implementação de um sistema inovador que permitiu a visualização abrangente de glebas nacionais, integrando uma variedade de informações importantes para quem possui acesso ao sistema. O sistema destaca-se pela sua capacidade de importar e mapear a localização precisa de cada gleba, oferecendo uma visão geoespacial completa. Uma característica central do sistema é a apresentação de séries temporais, que proporcionou uma análise histórica e evolutiva das glebas. Isso inclui a capacidade de gerar relatórios detalhados, que forneceu insights cruciais sobre padrões de uso da terra, tendências de produção e outras métricas relevantes.
-
-Além disso,o projeto possui um banco de dados robusto, onde todas as informações das glebas são armazenadas de maneira organizada e acessível.Essa abordagem assegura que dados críticos estejam disponíveis para consulta e análise, promovendo uma gestão eficaz das áreas agrícolas.Para melhorar a usabilidade,foi implementada uma funcionalidade intuitiva de salvamento de registros, permitindo que os usuários capturem instantâneos específicos de suas consultas ou análises. Foi oferecida, oferecemos a capacidade de salvar imagens das séries temporais, possibilitando a documentação visual das tendências observadas, visando a praticidade, com a qual inclui uma opção de download que permite aos usuários obterem facilmente informações detalhadas sobre as glebas.
-
-Em resumo, é uma plataforma abrangente e interativa para a gestão e análise de glebas nacionais. Ao combinar recursos de mapeamento, séries temporais, relatórios, bancos de dados eficientes e funcionalidades de salvamento e download, buscou-se uma solução basica e proporcionou uma valiosa ferramenta para os usuarios.
- 
+Foi proposto uma solução abrangente que envolve a coleta e o tratamento dos dados do programa Federal ProAgro, a reestruturação eficiente dos dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem buscou facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
+Além disso,o projeto possui um banco de dados robusto, onde todas as informações das glebas são armazenadas de maneira organizada e acessível.Essa abordagem assegura que dados críticos estejam disponíveis para consulta e análise, promovendo uma gestão eficaz das áreas agrícolas.Para melhorar a usabilidade,foi implementada uma funcionalidade intuitiva de salvamento de registros, permitindo que os usuários capturem instantâneos específicos de suas consultas ou análises.
+Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a documentação visual das tendências observadas, visando a praticidade, com a qual inclui uma opção de download que permite aos usuários obterem facilmente informações detalhadas sobre as glebas.
 
 ## :desktop_computer: Tecnologias Utilizadas
 <ul>
