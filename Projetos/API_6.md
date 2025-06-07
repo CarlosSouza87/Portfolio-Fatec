@@ -75,9 +75,7 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
   
       Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.
 
-     <details open><summary>Informações sobre scripts utilizados para manipulção de dados</summary>
-
-   ### Script para Coordenadas
+     ### Script para Coordenadas
      
       Python
 	
