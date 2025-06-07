@@ -52,7 +52,7 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
  ## :dart: Contribuições Individuais:
 
  **1° Sprint**
-- Criação Ambiente Azure
+- Criação Ambiente Azure;
 - Instalação do Banco de dados Microsoft SQL;
 - Criação e modelagem do banco de dados.
   
