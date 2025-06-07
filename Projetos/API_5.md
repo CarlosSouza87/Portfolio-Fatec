@@ -85,7 +85,7 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <td>★★★★★</td>
     </tr>	
    <tr>
-      <td>Microsof SQL SERVER</td>
+      <td>Microsof SQL </td>
       <td>★★★★★</td>
     </tr>	
     <tr>
