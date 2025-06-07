@@ -147,7 +147,7 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 	session.close()
 
  ## Utilização de Bibliotecas:
-  pandas: Usada para manipulação de dados, especialmente para ler e escrever dados em formato de DataFrame.
+  Pandas: Usada para manipulação de dados, especialmente para ler e escrever dados em formato de DataFrame.
   shapely.geometry.Point: Usada para representar objetos geométricos do tipo ponto.
   sqlalchemy: Uma biblioteca SQL para Python, usada para interagir com o banco de dados.
   declarative_base: Usada para criar classes de mapeamento ORM.
