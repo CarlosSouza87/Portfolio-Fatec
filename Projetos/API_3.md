@@ -59,8 +59,6 @@
  - Apresentação ao cliente da versão final da aplicação.
  </details>   
 
-  
-O desafio foi diferente do projeto anterior, pois deveríamos atender os requisitos necessários e ter uma comunicação ativa com o cliente a fim de produzir entregas de valores em cada etapa do processo, por isso ajudei a gerenciar a equipe utilizando a metodologia ágil Scrum.
   <h3 align="center"> Hard Skills </h3>
   <table align="center">
     <tr>
