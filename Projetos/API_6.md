@@ -87,7 +87,7 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
     </tr>
     <tr>
       <td>GITHUB</td>
-      <td>★★★★★</td>
+      <td>★★★★☆</td>
     </tr>
        
 
