@@ -49,26 +49,30 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- ## :dart: Contribuições Pessoais: 
+ ## :dart: Contribuições Individuais:
 
-
-<details>
-<summary> 1º sprint - Montagem dos modelos das telas e realização da tela home: </summary>
+ **1° Sprint**
+- Criação Ambiente Azure
+- Instalação do Banco de dados Microsoft SQL;
+- Criação e modelagem do banco de dados.
   
-- Tarefa de montagem das telas realizada no figma e inicio do projeto com a tela home no vue.js;
+ **2° Sprint**  
+- Apoio na criação da conexão da aplicação ao Banco de dados;
+- Gerenciamento do Banco de dados atraves do seu SGBD.
+- Devido a limitação de transações na Azure foram configurados e utilizadas varias contas e bancos.
+- Contribuição na configuração  Intercomunicação  entre as dois Clouds utilizados na transferencia de arquivos
 
-2° Sprint - Criação da tela de configuração do google drive para a azure:
-- Realizada a criação das telas visual para conectar a nuvem do driver para realização da transferencia da azure;
+ **3° Sprint**
+ - Contribuição na montagem do readme;
+ - Teste e  validação  na utilização da Aplicação;
+ - Apoio na busca de soluções para  as dificuldades dos desenvolvedores;
+ - Ajustes em tabelas e colunas do banco de dados necessarios encontrados até esta Sprint.
 
-3° Sprint - Ajuste na tela de configuração e inserção do modal :
-- Ajuste da tela de configuração do projeto e inserção do modal na tela de configuração da azure e drive;
+ **4° Sprint**
+ - Testes finais da aplicação;
+ - Apresentação final da aplicação ao cliente.
+   
 
-4° Sprint - Ajuste da tela de parametro de tempo:
-- E como sprint final realizei os ajustes de tempo e minuto para a transferencia de dados do projeto;
-
-</details>
-
-  
 </details>
 
 
@@ -81,12 +85,12 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <th width="300px">Classificação</th>
     </tr>
     <tr>
-      <td>HTML</td>
-      <td>★★★★☆</td>
+      <td>Metodologia Scrum - Product Owner</td>
+      <td>★★★★★</td>
     </tr>
     <tr>
-      <td>Azure</td>
-      <td>★☆☆☆☆</td>
+      <td>Microsof Azure</td>
+      <td>★★★★★</td>
     </tr>	
     <tr>
       <td>Python</td>
@@ -98,11 +102,11 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
     </tr>
      <tr>
       <td>CSS</td>
-      <td>★★★★☆</td>
+      <td>☆☆☆☆☆</td>
     </tr>
       <tr>
       <td>JAVASCRIT</td>
-      <td>★★★☆☆</td>
+      <td>★☆☆☆☆</td>
     </tr>
  <tr>
       <td>VUEJS</td>
