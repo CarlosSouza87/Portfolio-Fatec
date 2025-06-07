@@ -40,13 +40,116 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
 
  ## :dart: Contribuições Pessoais: 
 
-
-
 Desenvolvi  em parceria com outro componente do grupo um modelo lógico detalhado,analisando e desenhando cuidadosamente as entidades e seus atributos, bem como os relacionamentos necessarios entre elas.Essa estruturação foi muito importante na implementação de um banco de dados capaz de suportar com qualidade o acesso aos metadados,a definição precisa dos relacionamentos entre as entidades foi crucial para garantir a consistência das informações armazenadas.
 Além da arquitetura do banco de dados,bem como seu gerenciamento,foram implementadas consultas SQL estratégicass para recuperar os metadados de maneira rápida e precisa, contribuindo de maneira decisiva  na construção do dashboard de monitoramento do projeto 
 de maneira rapida e eficiente.
 Trabalhei de perto com a equipe, também executando meu papel de Scrum master, resolvendo atritos entre os membros do grupo, com reuniões de pacificações para resolver a diversas divergencias pessoas dentro do projeto, buscando sempre a integração perfeita entre os memobros do grupo.
 Todas essas ações, desde a concepção do Modelo Lógico até a implementação das consultas SQL,além da administração de pessoas, foi fundamental na construção de uma estrutura coesa e eficaz para  desenvolvimento e o sucesso desse  projeto.
+
+### Modelo Lógico
+     
+   ```
+	
+	Entidade: Gleba_SP
+
+	Atributos:
+	  REF_BACEN (Chave Primária)
+	  NU_ORDEM
+	  NU_IDENTIFICADOR
+	  NU_INDICE_GLEBA
+	  NU_INDICE_PONTO
+	  CGL_VL_ALTITUDE
+	  VL_VERTICES (Tipo Geometry)
+	A tabela glebas_sp armazena informações relacionadas a glebas de terras, Brasil. Aqui estão algumas explicações para os atributos:
+
+	REF_BACEN: Referência relacionada ao Banco Central (Identificador único para cada registro).
+	NU_ORDEM: Número de ordem.
+	NU_IDENTIFICADOR: Número identificador.
+	NU_INDICE_GLEBA: Número de índice da gleba.
+	NU_INDICE_PONTO: Número de índice do ponto.
+	CGL_VL_ALTITUDE: Valor da altitude.
+	VL_VERTICES: Dados geométricos representando os vértices (pontos) da gleba.
+
+	No seu caso, a coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações sobre a forma geográfica da gleba do terreno. Isso pode incluir coordenadas espaciais que definem os vértices da gleba,
+	permitindo representar a forma da área de terra no plano geográfico.
+  
+   ```
+Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.
+
+
+<details open><summary>Informações sobre scripts utilizados para manipulção de dados</summary>
+
+   ### Script para Coordenadas
+     
+   ```python
+	
+ 	import pandas as pd
+	from shapely.geometry import Point
+	from sqlalchemy import create_engine, Column, Integer, Text, Float, Geometry
+	from sqlalchemy.ext.declarative import declarative_base
+	from sqlalchemy.orm import sessionmaker
+	
+	# Definindo a classe da tabela
+	Base = declarative_base()
+	
+	class Gleba(Base):
+	    __tablename__ = 'glebas_sp'
+	
+	    REF_BACEN = Column(Integer, primary_key=True)
+	    NU_ORDEM = Column(Text)
+	    NU_IDENTIFICADOR = Column(Text)
+	    NU_INDICE_GLEBA = Column(Text)
+	    NU_INDICE_PONTO = Column(Integer)
+	    VL_LATITUDE = Column(Text)
+	    VL_LONGITUDE = Column(Text)
+	    CGL_VL_ALTITUDE = Column(Text)
+	    VL_VERTICES = Column(Geometry(geometry_type='POINT', srid=4326))
+	
+	# Configurações do banco de dados
+	db_user = 'techninjas'
+	db_password = '**********'
+	db_host = 'techninjas.microsoft'
+	db_port = '3306'
+	db_name = 'techvision'
+	
+	# Criando a conexão com o banco de dados
+	engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
+	
+	# Criando a tabela no banco de dados (caso não exista)
+	Base.metadata.create_all(engine)
+	
+	# Lendo o arquivo CSV
+	csv_path = '/glebas.csv'
+	df = pd.read_csv(csv_path)
+	
+	# Criando objetos geométricos e inserindo no banco de dados
+	Session = sessionmaker(bind=engine)
+	session = Session()
+	
+	for _, row in df.iterrows():
+	    latitude = float(row['VL_LATITUDE'])
+	    longitude = float(row['VL_LONGITUDE'])
+	    point = Point(longitude, latitude)
+	
+	    gleba = Gleba(
+	        REF_BACEN=row['REF_BACEN'],
+	        NU_ORDEM=row['NU_ORDEM'],
+	        NU_IDENTIFICADOR=row['NU_IDENTIFICADOR'],
+	        NU_INDICE_GLEBA=row['NU_INDICE_GLEBA'],
+	        NU_INDICE_PONTO=row['NU_INDICE_PONTO'],
+	        VL_LATITUDE=row['VL_LATITUDE'],
+	        VL_LONGITUDE=row['VL_LONGITUDE'],
+	        CGL_VL_ALTITUDE=row['CGL_VL_ALTITUDE'],
+	        VL_VERTICES=point
+	    )
+	
+	    session.add(gleba)
+	
+	session.commit()
+	session.close()
+
+  
+   ```
 
 
 <br></br>
