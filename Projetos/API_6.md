@@ -231,19 +231,24 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
     Essa subconsulta é renomeada como Glebas e serve como base para a junção posterior.
 
 #### Junção com a Tabela saida5:
-    A consulta principal junta a subconsulta Glebas com a tabela techdata.saida5 usando a condição S5.REF_BACEN = Glebas.REF_BACEN.
-    Além disso, são realizadas junções adicionais com as tabelas techvision.grao_semente, techvision.tipo_irrigacao e techvision.tipo_garantia_empreendimento.
+    A consulta principal junta a subconsulta Glebas com a tabela techdata.saida5 usando a condição 
+    S5.REF_BACEN = Glebas.REF_BACEN.
+    Além disso, são realizadas junções adicionais com as tabelas techvision.grao_semente, 
+    techvision.tipo_irrigacao e techvision.tipo_garantia_empreendimento.
 
 #### Seleção de Campos e Manipulação de Dados:
     A consulta seleciona vários campos, incluindo REF_BACEN, VL_VERTICES, DT_EMISSAO, CD_ESTADO, e outros.
-    A cláusula CASE é usada para alterar o valor da coluna ESTADO dependendo do valor de CD_ESTADO, renomeando o estado "SP" para "São Paulo".
+    A cláusula CASE é usada para alterar o valor da coluna ESTADO dependendo do valor de CD_ESTADO,
+    renomeando o estado "SP" para "São Paulo".
 
 #### Agrupamento e Funções de Agregação:
-    Os resultados são agrupados usando a cláusula GROUP BY com base em várias colunas, incluindo REF_BACEN, DT_EMISSAO, CD_ESTADO, e outros.
+    Os resultados são agrupados usando a cláusula GROUP BY com base em várias colunas, incluindo 
+    REF_BACEN, DT_EMISSAO, CD_ESTADO, e outros.
     Funções de agregação, como SUM ou AVG, não estão presentes na consulta, mas poderiam ser adicionadas se necessário.
 
 #### Resultados da Consulta:
-    A consulta retorna informações sobre glebas agrícolas, suas safras associadas, tipos de grãos, informações sobre irrigação, seguro agrícola e outros detalhes relevantes.
+    A consulta retorna informações sobre glebas agrícolas, suas safras associadas, tipos de grãos,
+    informações sobre irrigação, seguro agrícola e outros detalhes relevantes.
     Os resultados são organizados de acordo com as colunas especificadas na cláusula GROUP BY.
 
 </details> 
