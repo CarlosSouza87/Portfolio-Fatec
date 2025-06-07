@@ -42,18 +42,7 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
 
 
 <details>
-<summary> 1º sprint - Mondelagem das estuturas do mapa utilizado: </summary>
-  
-- Inserção dos principais componentes,botões e configurações para a futura visualização das glebas do projeto;
-
-2° Sprint - Criação da tela home do projeto do sistema:
-- Realizada a criação das telas visual o sistema de login e cadastro do projeto para que siga para o mapa principal;
-
-3° Sprint - Ajuste na demonstração das glebas e inserção de serie temporal no sistema :
-- Inserção das series temporais ja criadas para o sistema e inserção de um botão com a capacidade de gerar imagem da serie temporal;
-
-4° Sprint -Melhore do layout das telas para a vizualziação do cliente:
-- E como sprint final realizei os ajustes de tempo e minuto para a transferencia de dados do projeto;
+Neste projeto trabalhei bem especificamente na modelagem do banco de dados bem como  a criação dsa tabe
 
 </details>
 
