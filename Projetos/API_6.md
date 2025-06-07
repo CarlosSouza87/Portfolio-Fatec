@@ -251,59 +251,17 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
     informações sobre irrigação, seguro agrícola e outros detalhes relevantes.
     Os resultados são organizados de acordo com as colunas especificadas na cláusula GROUP BY.
 
-</details> 
+### Conhecimentos aprimorados/adquiridos
 
-<br></br>
+ *  Ao longo do projeto aprendi novas funções e comandos sobre bancos de dados, melhorei e aprofundei minha compreensão dos conceitos 
+    fundamentais e das práticas essenciais associadas a essa tecnologia.
+ *  A capacidade de criar consultas SQL eficientes para recuperar, inserir, atualizar e excluir dados proporcionou-me uma base 
+    sólida para a manipulação eficaz de informações em um ambiente de banco de dados relacional.
+ *  Com isso,posso aplicar no meu trabalho, os conhecimentos adquiridos, facilitando a migração,manipulação e extração das
+    informações necessárias nos projeto que administro no meu dia a dia.
+ *  Aprendi as práticas recomendadas para realizar backups regulares e garantir a recuperação eficiente de dados em situações de falha.
+ *  A segurança e a integridade dos dados são prioridades, e a capacidade de restaurar dados é essencial para a continuidade dos 
+    negócios.
 
-<h3 align="center"> Hard Skills </h3>
-  <table align="center">
-    <tr>
-      <th width="300px">Tecnologia/Metodologia</th>
-      <th width="300px">Classificação</th>
-    </tr>
-    <tr>
-      <td>Metodologia Scrum</td>
-      <td>★★★★★</td>
-    </tr>
-    <tr>
-      <td>MONGODB</td>
-      <td>★★☆☆☆</td>
-    </tr>	
-	<tr>
-      <td>MYSQL</td>
-      <td>★★★★★</td>
-    </tr>	
-    <tr>
-      <td>Python</td>
-      <td>★☆☆☆☆</td>
-    </tr>
-    <tr>
-      <td>GITHUB</td>
-      <td>★★★★☆</td>
-    </tr>
-       
-
-  </table>
-
- <h3 align="center">Soft Skills</h3>
-  <table align="center">
-    <tr>
-      <th width="300px">Habilidade</th>
-      <th width="300px">Descrição</th>
-    </tr>
-    <tr>
-      <td>Tomada de decisões</td>
-      <td>Desenvolvi no momento ao qual foi necessario compreender quais as melhores escolhas para a realização das tarefas e para o melhor para a entrega da Equipe.</td>
-    </tr>
-    <tr>
-      <td>Iniciativa</td>
-      <td>Aprendi a partir da busca pela melhor forma de realizar as tasks direcionadas a mim e para que contruibuir para beneficio próprio.</td>
-    </tr>
-    <tr>
-      <td>Resiliencia</td>
-      <td>Realizei das tasks de forma harmoniosa e produtiva em equipe, contribuindo com ideias e apoiando os colegas.</td>
-  </table>
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   <h2 align="center"> GITHUB DO PROJETO</h2>
   <h3 align="center">https://github.com/TechVisionn/tech-parent</h3>
