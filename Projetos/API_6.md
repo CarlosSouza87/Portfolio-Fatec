@@ -41,14 +41,12 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
  ## :dart: Contribuições Pessoais: 
 
 
-<details>
+
 Desenvolvi  em parceria com outro componente do grupo um modelo lógico detalhado,analisando e desenhando cuidadosamente as entidades e seus atributos, bem como os relacionamentos necessarios entre elas.Essa estruturação foi muito importante na implementação de um banco de dados capaz de suportar com qualidade o acesso aos metadados,a definição precisa dos relacionamentos entre as entidades foi crucial para garantir a consistência das informações armazenadas.
 Além da arquitetura do banco de dados,bem como seu gerenciamento,foram implementadas consultas SQL estratégicass para recuperar os metadados de maneira rápida e precisa, contribuindo de maneira decisiva  na construção do dashboard de monitoramento do projeto 
 de maneira rapida e eficiente.
 Trabalhei de perto com a equipe, também executando meu papel de Scrum master, resolvendo atritos entre os membros do grupo, com reuniões de pacificações para resolver a diversas divergencias pessoas dentro do projeto, buscando sempre a integração perfeita entre os memobros do grupo.
 Todas essas ações, desde a concepção do Modelo Lógico até a implementação das consultas SQL,além da administração de pessoas, foi fundamental na construção de uma estrutura coesa e eficaz para  desenvolvimento e o sucesso desse  projeto.
-
-</details>
 
 
 <br></br>
