@@ -33,7 +33,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
  ## :dart: Contribuições Individuais: 
 
 
-**1 Sprint**
+**1° Sprint**
 - Auxilio na prototipagem de algumas telas da nosso aplicativo (vai deVan), utilizei o editor grafico Figma.
 
 **2° Sprint**
@@ -43,7 +43,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 **3° Sprint**
 - Integração da telas com o Banco de Dado Firebase, sendo possivel guardar os dados do motorista, e sua lista de passageiro, para assim melhor gerenciar.
 
-**4° Sprint**
+**4° Sprinvt**
 - Criação dos videos ilustrativos da aplicação em funcionamento;
 - Apresentação da evolução do aplicativo ao cliente em todas as sprints. 
 
@@ -93,6 +93,12 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
       <td> Organizei e planejei como realizar todas as atividades propostas.</td>
     </tr>
   </table>
+  <h3 align="center">  Blocos de programação desenvolvidos </h3>
+  <table align="center">
+
+ 
+  
+
    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
