@@ -86,7 +86,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
     </tr>
     <tr>
       <td>Comunicação</td>
-      <td>Desenvolvi para sanar todas as duvidas decorrer do projeto e a comunicação entre o grupo para imediatamente instruir o grupo do que estava sendo feito e o que se deve melhorar.</td>
+      <td>Utilizei da minha boa comunicação para sanar todas as duvidas entre o grupo  no decorrer do projeto para instruir o grupo do que estava sendo feito e o que se devia melhorar.</td>
     </tr>
     <tr>
       <td>Proatividade</td>
