@@ -43,7 +43,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
 **3° Sprint**
 - Integração da telas com o Banco de Dado Firebase, sendo possivel guardar os dados do motorista, e sua lista de passageiro, para assim melhor gerenciar.
 
-**4° Sprinvt**
+**4° Sprint**
 - Criação dos videos ilustrativos da aplicação em funcionamento;
 - Apresentação da evolução do aplicativo ao cliente em todas as sprints. 
 
@@ -96,7 +96,18 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
   <h3 align="center">  Blocos de programação desenvolvidos </h3>
   <table align="center">
 
- 
+<ul>
+  <li>
+    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/raw/main/img/blocosdesenvolvidos1.jpg" width="600" height="600" alt="Blocos Desenvolvidos" />
+  </li>
+</ul>
+<ul>
+  <li>
+    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/raw/main/img/blocosdesenvolvidos2.jpg" width="600" height="600" alt="Blocos Desenvolvidos" />
+  </li>
+</ul>
+
+
   
 
    
