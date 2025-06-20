@@ -92,7 +92,7 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
     </tr>
     <tr>
       <td>Trabalho em Equipe</td>
-      <td>Desenvolvi bastante esta Soft Skills para sanar todas as duvidas ao decorrer do projeto e alem disso a comunicação entre o grupo para imediatamente instruir o grupo do que estava sendo feito e no que deverimos nos aprimorar.</td>
+      <td>Desenvolvi bastante esta Soft Skills para sanar todas as duvidas no decorrer do projeto e, além disso, a comunicação entre o grupo para imediatamente instruir sobre o que estava sendo feito e no que deverimos nos aprimorar.</td>
   </table>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
