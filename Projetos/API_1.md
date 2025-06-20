@@ -93,7 +93,7 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
       <td> Organizei e planejei como realizar todas as atividades propostas.</td>
     </tr>
   </table>
-  <h3 align="center">  Blocos de programação desenvolvidos </h3>
+  <h2 align="center">  Blocos de programação desenvolvidos </h2>
   <table align="center">
 
 <ul>
