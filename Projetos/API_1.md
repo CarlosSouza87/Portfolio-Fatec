@@ -14,7 +14,9 @@ Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de me
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original-wordmark.svg" width="100" height="100" />
 <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Mit_app_inventor.jpg" width="100" height="100" alt="MIT App Inventor Logo" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain-wordmark.svg" width="100" height="100" />
-</ul>
+
+ <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Mit_app_inventor.jpg" width="100" height="100" alt="MIT App Inventor Logo" />
+
  <br></br>
 
 
