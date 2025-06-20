@@ -8,6 +8,8 @@ Este projeto tem como objetivo principal a integração eficiente entre motorist
 Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de mensagens padronizadas, o que permitiu aos motoristas notificar os passageiros sobre possíveis imprevistos, mudanças de rota, atrasos ou qualquer outra informação relevante. Isso contribuiu para uma comunicação mais transparente e eficaz entre as partes envolvidas, aumentando a confiabilidade do serviço de transporte.
 <br></br>
 
+## :desktop_computer: Tecnologias Utilizadas
+
 
 <a href="https://gitlab.com">GitLab</a>: utilizado como repositório de projeto,para armazenar todo o código-fonte e recursos do projeto. Isso permitiu o controle de versões, colaboração entre a equipe de desenvolvimento e o acompanhamento de alterações no código ao longo do tempo.
  <br></br>
