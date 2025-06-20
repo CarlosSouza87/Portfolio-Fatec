@@ -8,10 +8,7 @@ Este projeto tem como objetivo principal a integração eficiente entre motorist
 Além disso, o sistema ofereceu a funcionalidade de comunicação por meio de mensagens padronizadas, o que permitiu aos motoristas notificar os passageiros sobre possíveis imprevistos, mudanças de rota, atrasos ou qualquer outra informação relevante. Isso contribuiu para uma comunicação mais transparente e eficaz entre as partes envolvidas, aumentando a confiabilidade do serviço de transporte.
 <br></br>
 
-<ul>
-<img src="https://user-content.gitlab-static.net/e1eb42f7507c6317df07fdfe45f75fba0ba0eff4/68747470733a2f2f75706c6f61646465696d6167656e732e636f6d2e62722f696d616765732f3030322f3932372f3135322f66756c6c2f5465636e6f6c6f676961732e706e673f31363033323034303937" width="1000" height="500" alt="MIT App Inventor" />
-</ul>
- <br></br>
+
 <a href="https://gitlab.com">GitLab</a>: utilizado como repositório de projeto,para armazenar todo o código-fonte e recursos do projeto. Isso permitiu o controle de versões, colaboração entre a equipe de desenvolvimento e o acompanhamento de alterações no código ao longo do tempo.
  <br></br>
  <a href="https://appinventor.mit.edu">AppInventor</a>: utilizada para estruturação e desenvolvimento do código do aplicativo.Ofereceu uma interface de arrastar e soltar para a criação de aplicativos Android, permitindo uma prototipagem rápida e eficaz.
