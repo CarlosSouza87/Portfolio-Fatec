@@ -40,7 +40,7 @@
  ## :dart: Contribuições Individuais:
 
  **1° Sprint**
-- Instalação do Banco de dados Postgres;
+- Instalação do Banco de dados Oracle;
 - Criação e modelagem do banco de dados;
 - Criação das tabelas e colunas definidas.
 
