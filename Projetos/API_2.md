@@ -99,56 +99,65 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
   <h2 align="center">  Comandos Utilizados  na aplicação </h2>
   <table align="center">
   ==>(Database Size)
-INSERT INTO estatisticas(db_name, db_size, query_date_time)
-	SELECT pg_database.datname, pg_size_pretty(pg_database_size(pg_database.datname)),current_timestamp(0) AS size 
-	FROM pg_database;
+select * from pg_stat_statements
 
-==>(Table Size)
-INSERT INTO estatisticas_table_size(tab_name, tab_size, query_date_time) SELECT tabela,
-		pg_size_pretty(pg_total_relation_size(esq_tab)), current_timestamp(0) AS tamanho
-		FROM (SELECT tablename AS tabela,
-		schemaname||'.'||tablename AS esq_tab
-	    FROM pg_catalog.pg_tables
-		WHERE schemaname NOT
-		IN ('pg_catalog', 'information_schema', 'pg_toast') ) AS x
-		ORDER BY pg_total_relation_size(esq_tab) DESC;
+/*10 Consultas mais demoradas*/
+SELECT total_exec_time, query
+FROM pg_stat_statements
+ORDER BY total_exec_time
+DESC LIMIT 10;
 
-==>(Calls queries)
-INSERT INTO estatisticas_call_query (calls, query_name, time_exec, query_date_time) 
-SELECT calls, SUBSTRING(query 
-		FROM 1 for 50), total_exec_time, current_timestamp(0)
-		FROM pg_stat_statements where calls > 100;
+/*Consultas mais demoradas em média*/
+SELECT mean_exec_time, query
+FROM pg_stat_statements
+ORDER BY mean_exec_time
+DESC LIMIT 10;
 
-==>(Long time exec)
-INSERT INTO estatisticas_time(calls, time_exec, query_date_time)
-SELECT SUBSTRING(query FROM 1 for 50), total_exec_time, current_timestamp(0) 
-	FROM pg_stat_statements 
-	ORDER BY total_exec_time 
-	DESC LIMIT 10;
+/*Chamadas mais de 1000 vezes*/
+SELECT calls, query, total_exec_time
+FROM pg_stat_statements
+where calls > 1000;
 
-==>(Average Time)
-INSERT INTO estatisticas_time_average(calls, time_exec, query_date_time)
-SELECT SUBSTRING(query FROM 1 for 50), mean_exec_time, current_timestamp(0) FROM pg_stat_statements 
-ORDER BY mean_exec_time DESC LIMIT 10;
+/*Tamanho banco dos bancos de dados excluindo os bancos do sistema, possibilidade de inserir só o banco em que estou logado*/
+SELECT
+	datname                                   AS banco,
+	pg_database_size(datname)                 AS tamanho,
+	pg_size_pretty(pg_database_size(datname)) AS tamanho_pretty
+FROM pg_database
+WHERE datname NOT IN ('template0', 'template1', 'postgres') /*Inserir o banco que estou logado*/
+ORDER BY tamanho DESC, banco ASC
 
-==>(Informations database) 
-INSERT INTO infos_sys(debaseid, debasename, process, username, appli_conect, client_ip, client_host, client_port, 
-start_query, type_event, wait_event, stats, querys, out_type, query_date_time)
-SELECT datid, datname, pid, usename, application_name, client_addr, client_hostname, client_port, 
-query_start, wait_event_type, wait_event, state, query, backend_type , current_timestamp(0) 
-FROM pg_stat_activity;
+/*Tamanho banco dos bancos de dados excluindo os bancos do sistema*/
+(SELECT
+	datname                                   AS banco,
+	pg_database_size(datname)                 AS tamanho,
+	pg_size_pretty(pg_database_size(datname)) AS tamanho_pretty
+FROM pg_database
+WHERE datname NOT IN ('template0', 'template1', 'postgres') 
+ORDER BY tamanho DESC, banco ASC)
 
-==>(Status Archiver)
-INSERT INTO metrics_archiver (count_archived, count_failed, last_failed, query_date_time) 
-SELECT archived_count, failed_count, last_failed_time, current_timestamp(0) FROM pg_stat_archiver;
+UNION ALL
 
-==>(Database)
-INSERT INTO stat_database (datid, datname, xact_commit, xact_rollback, blks_read, blks_hit, conflicts, deadlocks, query_date_time) 
-SELECT datid, datname, xact_commit, xact_rollback, blks_read, blks_hit, conflicts, deadlocks, current_timestamp(0) FROM pg_stat_database;
+(SELECT
+	'TOTAL'                                        AS banco,
+	sum(pg_database_size(datname))                 AS tamanho,
+	pg_size_pretty(sum(pg_database_size(datname))) AS tamanho_pretty
+FROM pg_database
+WHERE datname NOT IN ('template0', 'template1', 'postgres'));
 
-==>(Database Conflict)
-INSERT INTO stat_database_conflict (datid, datname, conflict_lock, conflict_deadlock, query_date_time) 
-SELECT datid, datname, confl_lock, confl_deadlock, current_timestamp(0) FROM pg_stat_database_conflicts;
+
+/*Tamanhos de tabelas*/
+SELECT esquema, tabela,
+       pg_size_pretty(pg_relation_size(esq_tab)) AS tamanho,
+       pg_size_pretty(pg_total_relation_size(esq_tab)) AS tamanho_total
+  FROM (SELECT tablename AS tabela,
+               schemaname AS esquema,
+               schemaname||'.'||tablename AS esq_tab
+          FROM pg_catalog.pg_tables
+         WHERE schemaname NOT
+            IN ('pg_catalog', 'information_schema', 'pg_toast') ) AS x
+ ORDER BY pg_total_relation_size(esq_tab) DESC;
+ 
 
    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
