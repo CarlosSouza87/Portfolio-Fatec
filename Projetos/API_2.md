@@ -98,8 +98,7 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
 </table>
   <h2 align="center">  Comandos Utilizados  na aplicação </h2>
   <table align="center">
-  ==>(Database Size)
-select * from pg_stat_statements
+ select * from pg_stat_statements
 
 /*10 Consultas mais demoradas*/
 SELECT total_exec_time, query
