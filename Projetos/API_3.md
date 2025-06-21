@@ -125,13 +125,22 @@
   </table>
   <h2 align="center">  Modelo Conceitual do Projeto</h2>
   <table align="center">
-
-https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_Conceitual.jpg
+<ul>
+  <li>
+    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_Conceitual.jpg " width="600" height="600" alt="Blocos Desenvolvidos" />
+  </li>
+</ul>
 
 </table>
   <h2 align="center"> Modelo Lógico do Projeto</h2>
   <table align="center">
-
+<ul>
+  <li>
+    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_Conceitual.jpg " width="600" height="600" alt="Blocos Desenvolvidos" />
+  </li>
+</ul>
+  
+*************************
 <h2 align="center"> GITHUB DO PROJETO</h2>
 
  <h3 align="center">https://github.com/Doc-Docker/APIMidAll</h3>
