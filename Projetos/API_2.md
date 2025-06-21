@@ -95,6 +95,11 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
       <td>Desenvolvi bastante esta Soft Skills para sanar todas as duvidas no decorrer do projeto e, além disso, a comunicação entre o grupo para imediatamente instruir sobre o que estava sendo feito e no que deverimos nos aprimorar.</td>
   </table>
 
+</table>
+  <h2 align="center">  Blocos de programação desenvolvidos </h2>
+  <table align="center">
+
+   
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h2 align="center"> GITHUB DO PROJETO</h2>
