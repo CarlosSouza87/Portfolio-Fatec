@@ -96,8 +96,59 @@ Essa iniciativa reflete um entendimento avançado das necessidades de gestão de
   </table>
 
 </table>
-  <h2 align="center">  Blocos de programação desenvolvidos </h2>
+  <h2 align="center">  Comandos Utilizados  na aplicação </h2>
   <table align="center">
+  ==>(Database Size)
+INSERT INTO estatisticas(db_name, db_size, query_date_time)
+	SELECT pg_database.datname, pg_size_pretty(pg_database_size(pg_database.datname)),current_timestamp(0) AS size 
+	FROM pg_database;
+
+==>(Table Size)
+INSERT INTO estatisticas_table_size(tab_name, tab_size, query_date_time) SELECT tabela,
+		pg_size_pretty(pg_total_relation_size(esq_tab)), current_timestamp(0) AS tamanho
+		FROM (SELECT tablename AS tabela,
+		schemaname||'.'||tablename AS esq_tab
+	    FROM pg_catalog.pg_tables
+		WHERE schemaname NOT
+		IN ('pg_catalog', 'information_schema', 'pg_toast') ) AS x
+		ORDER BY pg_total_relation_size(esq_tab) DESC;
+
+==>(Calls queries)
+INSERT INTO estatisticas_call_query (calls, query_name, time_exec, query_date_time) 
+SELECT calls, SUBSTRING(query 
+		FROM 1 for 50), total_exec_time, current_timestamp(0)
+		FROM pg_stat_statements where calls > 100;
+
+==>(Long time exec)
+INSERT INTO estatisticas_time(calls, time_exec, query_date_time)
+SELECT SUBSTRING(query FROM 1 for 50), total_exec_time, current_timestamp(0) 
+	FROM pg_stat_statements 
+	ORDER BY total_exec_time 
+	DESC LIMIT 10;
+
+==>(Average Time)
+INSERT INTO estatisticas_time_average(calls, time_exec, query_date_time)
+SELECT SUBSTRING(query FROM 1 for 50), mean_exec_time, current_timestamp(0) FROM pg_stat_statements 
+ORDER BY mean_exec_time DESC LIMIT 10;
+
+==>(Informations database) 
+INSERT INTO infos_sys(debaseid, debasename, process, username, appli_conect, client_ip, client_host, client_port, 
+start_query, type_event, wait_event, stats, querys, out_type, query_date_time)
+SELECT datid, datname, pid, usename, application_name, client_addr, client_hostname, client_port, 
+query_start, wait_event_type, wait_event, state, query, backend_type , current_timestamp(0) 
+FROM pg_stat_activity;
+
+==>(Status Archiver)
+INSERT INTO metrics_archiver (count_archived, count_failed, last_failed, query_date_time) 
+SELECT archived_count, failed_count, last_failed_time, current_timestamp(0) FROM pg_stat_archiver;
+
+==>(Database)
+INSERT INTO stat_database (datid, datname, xact_commit, xact_rollback, blks_read, blks_hit, conflicts, deadlocks, query_date_time) 
+SELECT datid, datname, xact_commit, xact_rollback, blks_read, blks_hit, conflicts, deadlocks, current_timestamp(0) FROM pg_stat_database;
+
+==>(Database Conflict)
+INSERT INTO stat_database_conflict (datid, datname, conflict_lock, conflict_deadlock, query_date_time) 
+SELECT datid, datname, confl_lock, confl_deadlock, current_timestamp(0) FROM pg_stat_database_conflicts;
 
    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
