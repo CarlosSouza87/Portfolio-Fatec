@@ -112,6 +112,16 @@
       <td>Trabalhei junto ao nosso P.O para garantir o escopo do projeto e construir o Product Backlog de uma forma prática e bem planejada.</td>
     </tr>
   </table>
+
+</table>
+  <h2 align="center">  Modelo Conceitual do Projeto</h2>
+  <table align="center">
+<ul>
+  <li>
+    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_Conceitual.jpg " width="600" height="800" alt="Blocos Desenvolvidos" />
+  </li>
+</ul>
+
   
 ---
 
