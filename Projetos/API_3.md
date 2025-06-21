@@ -121,9 +121,16 @@
   <td>Acessibilidade</td>
   <td>Adotei práticas de desenvolvimento acessível, garantindo que as aplicações sejam utilizáveis por todas as pessoas, independentemente de suas habilidades.</td>
 </tr>
+ 
   </table>
+  <h2 align="center">  Modelo Conceitual do Projeto</h2>
+  <table align="center">
 
 https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_Conceitual.jpg
+
+</table>
+  <h2 align="center"> Modelo Lógico do Projeto</h2>
+  <table align="center">
 
 <h2 align="center"> GITHUB DO PROJETO</h2>
 
