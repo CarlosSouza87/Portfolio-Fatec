@@ -6,7 +6,7 @@
  
 # :clipboard: Desafio/Projeto
   
-  <p align="justify" style="font-family:roboto;"> O projeto visa resolver o problema da empresa MidAll relacionado à criação de promoções em seu e-commerce. A solução proposta foi desenvolver um mini motor de regras que permitiu a flexibilidade e rápida atualização das mecânicas das promoções no sistema. Isso foi feito por meio de uma interface onde as regras das promoções poderiam ser cadastradas e aplicadas automaticamente quando os itens fossem adicionados ao carrinho de compras. Essa abordagem ofereceu agilidade na configuração e adaptação das promoções, proporcionando uma experiência personalizada aos clientes.
+  <p align="justify" style="font-family:roboto;"> O projeto tem como objetivo resolver um problema enfrentado pela empresa MidAll, relacionado à criação de promoções em seu e-commerce. A solução proposta foi o desenvolvimento de um mini motor de regras, que permite flexibilidade e rápida atualização das mecânicas promocionais no sistema. Isso foi viabilizado por meio de uma interface onde as regras das promoções podem ser cadastradas e aplicadas automaticamente, conforme os itens são adicionados ao carrinho de compras. Essa abordagem proporciona agilidade na configuração e adaptação das promoções, oferecendo uma experiência personalizada aos clientes.
 
 <h2 style="font-family:roboto;"> Tecnologias Utilizadas :computer:</h2>
  
@@ -111,7 +111,7 @@
 </tr>
 <tr>
   <td>Otimização de Desempenho</td>
-  <td>Otimizei o desempenho das aplicações, implementando práticas como lazy loading e minimização de recursos.</td>
+  <td>Otimizei o desempenho das aplicações, implementando práticas para utilização e minimização de recursos.</td>
 </tr>
 <tr>
   <td>Integração com API</td>
