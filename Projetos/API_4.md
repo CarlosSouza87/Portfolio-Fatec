@@ -104,7 +104,8 @@
     </tr>
     <tr>
       <td>Organização</td>
-      <td>Em alguns momentos foi necessario me impor como Scrum master para manter a equipe motivado e focada nas tarefas do time e apoio para definir as prioridades.</td>
+      <td>Em alguns momentos foi necessario me impor como Scrum Master para manter a equipe motivada e focada nas tarefas do projeto 
+ além de definir as prioridades.</td>
     </tr>
     <tr>
       <td>Planejamento</td>
