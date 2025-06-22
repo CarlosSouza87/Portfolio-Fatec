@@ -270,12 +270,14 @@ session.close()
 </pre>
 
  #### Seleção de Dados da Tabela Glebas:
-    A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP 
-    ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp,
-    ordenados pelo NU_INDICE_PONTO.
+  <pre>  
+	      A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP 
+              ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp,
+              ordenados pelo NU_INDICE_PONTO.
     
-    Essa subconsulta é renomeada como Glebas e serve como base para a junção posterior.
-
+              Essa subconsulta é renomeada como Glebas e serve como base para a junção posterior.
+  </pre>
+  
 #### Junção com a Tabela saida5:
     A consulta principal junta a subconsulta Glebas com a tabela techdata.saida5 usando a condição 
     S5.REF_BACEN = Glebas.REF_BACEN.
