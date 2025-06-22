@@ -79,6 +79,7 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
     <tr>
       <td>Liderança</td>
       <td>Trabalhei na motivação dos integrantes da equipe, influenciando positivamente e contribuindo para o sucesso de todos</td>
+</table>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
