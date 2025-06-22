@@ -89,101 +89,109 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 
 ### Modelo Lógico
 
-	Entidade: Gleba_SP
+<p><strong>Entidade:</strong> Gleba_SP</p>
 
-	Atributos:
-	  REF_BACEN (Chave Primária)
-	  NU_ORDEM
-	  NU_IDENTIFICADOR
-	  NU_INDICE_GLEBA
-	  NU_INDICE_PONTO
-	  CGL_VL_ALTITUDE
-	  VL_VERTICES (Tipo Geometry)
-	A tabela glebas_sp armazena informações relacionadas a glebas de terras, Brasil.
-        Aqui estão algumas explicações para os atributos:
+<p><strong>Atributos:</strong><br>
+REF_BACEN (Chave Primária)<br>
+NU_ORDEM<br>
+NU_IDENTIFICADOR<br>
+NU_INDICE_GLEBA<br>
+NU_INDICE_PONTO<br>
+CGL_VL_ALTITUDE<br>
+VL_VERTICES (Tipo Geometry)</p>
 
-	REF_BACEN: Referência relacionada ao Banco Central (Identificador único para cada registro).
-	NU_ORDEM: Número de ordem.
-	NU_IDENTIFICADOR: Número identificador.
-	NU_INDICE_GLEBA: Número de índice da gleba.
-	NU_INDICE_PONTO: Número de índice do ponto.
-	CGL_VL_ALTITUDE: Valor da altitude.
-	VL_VERTICES: Dados geométricos representando os vértices (pontos) da gleba.
+<p>A tabela <code>glebas_sp</code> armazena informações relacionadas a glebas de terras, Brasil.<br>
+Aqui estão algumas explicações para os atributos:</p>
 
-	No seu caso, a coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações
-       sobre a forma geográfica da gleba do terreno. Isso pode incluir coordenadas espaciais que definem os
-       vértices da gleba,permitindo representar a forma da área de terra no plano geográfico.
-  
-      Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.
+<p>
+<b>REF_BACEN:</b> Referência relacionada ao Banco Central (Identificador único para cada registro).<br>
+<b>NU_ORDEM:</b> Número de ordem.<br>
+<b>NU_IDENTIFICADOR:</b> Número identificador.<br>
+<b>NU_INDICE_GLEBA:</b> Número de índice da gleba.<br>
+<b>NU_INDICE_PONTO:</b> Número de índice do ponto.<br>
+<b>CGL_VL_ALTITUDE:</b> Valor da altitude.<br>
+<b>VL_VERTICES:</b> Dados geométricos representando os vértices (pontos) da gleba.
+</p>
 
-     ### Script para Coordenadas
-     
-      Python
-	
- 	import pandas as pd
-	from shapely.geometry import Point
-	from sqlalchemy import create_engine, Column, Integer, Text, Float, Geometry
-	from sqlalchemy.ext.declarative import declarative_base
-	from sqlalchemy.orm import sessionmaker
-	
-	# Definindo a classe da tabela
-	Base = declarative_base()
-	
-	class Gleba(Base):
-	    __tablename__ = 'glebas_sp'
-	
-	    REF_BACEN = Column(Integer, primary_key=True)
-	    NU_ORDEM = Column(Text)
-	    NU_IDENTIFICADOR = Column(Text)
-	    NU_INDICE_GLEBA = Column(Text)
-	    NU_INDICE_PONTO = Column(Integer)
-	    VL_LATITUDE = Column(Text)
-	    VL_LONGITUDE = Column(Text)
-	    CGL_VL_ALTITUDE = Column(Text)
-	    VL_VERTICES = Column(Geometry(geometry_type='POINT', srid=4326))
-	
-	# Configurações do banco de dados
-	db_user = 'techninjas'
-	db_password = '**********'
-	db_host = 'techninjas.microsoft'
-	db_port = '3306'
-	db_name = 'techvision'
-	
-	# Criando a conexão com o banco de dados
-	engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
-	
-	# Criando a tabela no banco de dados (caso não exista)
-	Base.metadata.create_all(engine)
-	
-	# Lendo o arquivo CSV
-	csv_path = '/glebas.csv'
-	df = pd.read_csv(csv_path)
-	
-	# Criando objetos geométricos e inserindo no banco de dados
-	Session = sessionmaker(bind=engine)
-	session = Session()
-	
-	for _, row in df.iterrows():
-	    latitude = float(row['VL_LATITUDE'])
-	    longitude = float(row['VL_LONGITUDE'])
-	    point = Point(longitude, latitude)
-	
-	    gleba = Gleba(
-	        REF_BACEN=row['REF_BACEN'],
-	        NU_ORDEM=row['NU_ORDEM'],
-	        NU_IDENTIFICADOR=row['NU_IDENTIFICADOR'],
-	        NU_INDICE_GLEBA=row['NU_INDICE_GLEBA'],
-	        NU_INDICE_PONTO=row['NU_INDICE_PONTO'],
-	        VL_LATITUDE=row['VL_LATITUDE'],
-	        VL_LONGITUDE=row['VL_LONGITUDE'],
-	        CGL_VL_ALTITUDE=row['CGL_VL_ALTITUDE'],
-	        VL_VERTICES=point
-	    )
-	
-	    session.add(gleba)
-	
-	session.commit()
-	session.close()
+<p>
+No seu caso, a coluna <code>VL_VERTICES</code> é do tipo geometry e é utilizada para armazenar informações
+sobre a forma geográfica da gleba do terreno. Isso pode incluir coordenadas espaciais que definem os
+vértices da gleba, permitindo representar a forma da área de terra no plano geográfico.
+</p>
+
+<p>Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.</p>
+
+### Script para Coordenadas
+
+<p><strong>Python:</strong></p>
+
+<pre>
+import pandas as pd
+from shapely.geometry import Point
+from sqlalchemy import create_engine, Column, Integer, Text, Float, Geometry
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+# Definindo a classe da tabela
+Base = declarative_base()
+
+class Gleba(Base):
+    __tablename__ = 'glebas_sp'
+
+    REF_BACEN = Column(Integer, primary_key=True)
+    NU_ORDEM = Column(Text)
+    NU_IDENTIFICADOR = Column(Text)
+    NU_INDICE_GLEBA = Column(Text)
+    NU_INDICE_PONTO = Column(Integer)
+    VL_LATITUDE = Column(Text)
+    VL_LONGITUDE = Column(Text)
+    CGL_VL_ALTITUDE = Column(Text)
+    VL_VERTICES = Column(Geometry(geometry_type='POINT', srid=4326))
+
+# Configurações do banco de dados
+db_user = 'techninjas'
+db_password = '**********'
+db_host = 'techninjas.microsoft'
+db_port = '3306'
+db_name = 'techvision'
+
+# Criando a conexão com o banco de dados
+engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
+
+# Criando a tabela no banco de dados (caso não exista)
+Base.metadata.create_all(engine)
+
+# Lendo o arquivo CSV
+csv_path = '/glebas.csv'
+df = pd.read_csv(csv_path)
+
+# Criando objetos geométricos e inserindo no banco de dados
+Session = sessionmaker(bind=engine)
+session = Session()
+
+for _, row in df.iterrows():
+    latitude = float(row['VL_LATITUDE'])
+    longitude = float(row['VL_LONGITUDE'])
+    point = Point(longitude, latitude)
+
+    gleba = Gleba(
+        REF_BACEN=row['REF_BACEN'],
+        NU_ORDEM=row['NU_ORDEM'],
+        NU_IDENTIFICADOR=row['NU_IDENTIFICADOR'],
+        NU_INDICE_GLEBA=row['NU_INDICE_GLEBA'],
+        NU_INDICE_PONTO=row['NU_INDICE_PONTO'],
+        VL_LATITUDE=row['VL_LATITUDE'],
+        VL_LONGITUDE=row['VL_LONGITUDE'],
+        CGL_VL_ALTITUDE=row['CGL_VL_ALTITUDE'],
+        VL_VERTICES=point
+    )
+
+    session.add(gleba)
+
+session.commit()
+session.close()
+</pre>
+
 
  ## Utilização de Bibliotecas:
   Pandas: Usada para manipulação de dados, especialmente para ler e escrever dados em formato de DataFrame.
