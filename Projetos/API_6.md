@@ -91,28 +91,29 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 ### Modelo Lógico
 
 <p><strong>Tabela:</strong> Glebas_sp:</p>
-
-<p><strong>Atributos:</strong><br>
-REF_BACEN (Chave Primária)<br>
-NU_ORDEM<br>
-NU_IDENTIFICADOR<br>
-NU_INDICE_GLEBA<br>
-NU_INDICE_PONTO<br>
-CGL_VL_ALTITUDE<br>
-VL_VERTICES (Tipo Geometry)</p>
-
-<p>A tabela Glebas_sp armazena informações relacionadas a glebas de terras, Brasil.<br>
+<pre>
+	
+	REF_BACEN (Chave Primária)
+	NU_ORDEM
+	NU_IDENTIFICADOR
+	NU_INDICE_GLEBA
+	NU_INDICE_PONTO
+	CGL_VL_ALTITUDE
+	VL_VERTICES (Tipo Geometry)
+</pre>
+    <p>A tabela Glebas_sp armazena informações relacionadas a glebas de terras, Brasil.<br>
 
 ## Informações sobre  os atributos:
 
-
-<b>REF_BACEN:</b> Referência relacionada ao Banco Central (Identificador único para cada registro).<br>
-<b>NU_ORDEM:</b> Número de ordem.<br>
-<b>NU_IDENTIFICADOR:</b> Número identificador.<br>
-<b>NU_INDICE_GLEBA:</b> Número de índice da gleba.<br>
-<b>NU_INDICE_PONTO:</b> Número de índice do ponto.<br>
-<b>CGL_VL_ALTITUDE:</b> Valor da altitude.<br>
-<b>VL_VERTICES:</b> Dados geométricos representando os vértices (pontos) da gleba.
+<pre>
+	REF_BACEN:Referência relacionada ao Banco Central (Identificador único para cada registro)
+	NU_ORDEM: Número de ordem
+	NU_IDENTIFICADOR: Número identificador
+	NU_INDICE_GLEBA: Número de índice da gleba
+	NU_INDICE_PONTO: Número de índice do ponto
+	CGL_VL_ALTITUDE: Valor da altitude
+	VL_VERTICES: Dados geométricos representando os vértices (pontos) da gleba
+</pre>
 
 A coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações
 sobre a forma geográfica da gleba do terreno. São coordenadas espaciais que definem os
@@ -121,31 +122,40 @@ vértices da gleba, permitindo representar a forma da área de terra no plano ge
 <p>Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.</p>
 
 ### Script para Coordenadas
-
-import pandas as pd
-from shapely.geometry import Point
-from sqlalchemy import create_engine, Column, Integer, Text, Float, Geometry
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+<pre>
+	import pandas as pd
+	from shapely.geometry import Point
+	from sqlalchemy import create_engine, Column, Integer, Text, Float, Geometry
+	from sqlalchemy.ext.declarative import declarative_base
+	from sqlalchemy.orm import sessionmaker
+</pre>
+<img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/coordenadas.jpg" width="1000"  height="1200" />
 
 # Configurações do banco de dados
-db_user = 'techninjas'
-db_password = '**********'
-db_host = 'techninjas.microsoft'
-db_port = '3306'
-db_name = 'techvision'
+<pre>
+  	db_user = 'techninjas'
+	db_password = '**********'
+	db_host = 'techninjas.microsoft'
+	db_port = '3306'
+	db_name = 'techvision'
+</pre>
 
 # Criando a conexão com o banco de dados
-engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
+<pre>
+	engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
+
+</pre>
 
 # Criando a tabela no banco de dados (caso não exista)
-Base.metadata.create_all(engine)
+<pre>
+	Base.metadata.create_all(engine)
+</pre>
 
 # Lendo o arquivo CSV
-
-csv_path = '/glebas.csv'
-df = pd.read_csv(csv_path)
-
+<pre>
+	csv_path = '/glebas.csv'
+	df = pd.read_csv(csv_path)
+</pre>
 
 ## Criando objetos geométricos e inserindo no banco de dados
 <pre>
@@ -268,6 +278,7 @@ session.close()
         S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
 
 </pre>
+<img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Glebas.jpg" width="1000"  height="1200" />
 
  #### Seleção de Dados da Tabela Glebas:
   <pre>  
