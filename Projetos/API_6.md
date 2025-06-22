@@ -105,7 +105,7 @@ VL_VERTICES (Tipo Geometry)</p>
 
 ## Informações sobre  os atributos:
 
-<p>
+
 <b>REF_BACEN:</b> Referência relacionada ao Banco Central (Identificador único para cada registro).<br>
 <b>NU_ORDEM:</b> Número de ordem.<br>
 <b>NU_IDENTIFICADOR:</b> Número identificador.<br>
@@ -113,13 +113,10 @@ VL_VERTICES (Tipo Geometry)</p>
 <b>NU_INDICE_PONTO:</b> Número de índice do ponto.<br>
 <b>CGL_VL_ALTITUDE:</b> Valor da altitude.<br>
 <b>VL_VERTICES:</b> Dados geométricos representando os vértices (pontos) da gleba.
-</p>
 
-<p>
 A coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações
 sobre a forma geográfica da gleba do terreno. São coordenadas espaciais que definem os
 vértices da gleba, permitindo representar a forma da área de terra no plano geográfico.
-</p>
 
 <p>Modelo de banco de dados utilizado um sistema de armazenamento de coordenadas de áreas de terrenos.</p>
 
@@ -145,10 +142,13 @@ engine = create_engine(f"mysql+mysqlconnector://{db_user}:{db_password}@{db_host
 Base.metadata.create_all(engine)
 
 # Lendo o arquivo CSV
+
 csv_path = '/glebas.csv'
 df = pd.read_csv(csv_path)
 
-# Criando objetos geométricos e inserindo no banco de dados
+
+## Criando objetos geométricos e inserindo no banco de dados
+<pre>
 Session = sessionmaker(bind=engine)
 session = Session()
 
@@ -173,6 +173,7 @@ for _, row in df.iterrows():
 
 session.commit()
 session.close()
+</pre>
 
  ## Utilização de Bibliotecas:
   Pandas: Usada para manipulação de dados, especialmente para ler e escrever dados em formato de DataFrame.
@@ -205,7 +206,6 @@ session.close()
 #### Querys para retorno de informações 
 
    ### Query Retorno Glebas
-     
 	SELECT 
 	    Glebas.REF_BACEN,
 	    Glebas.VL_VERTICES,
@@ -249,6 +249,7 @@ session.close()
 	    S5.VL_ALIQ_PROAGRO,	S5.CD_TIPO_CULTIVO, 
 	    S5.VL_JUROS, S5.VL_RECEITA_BRUTA_ESPERADA, 
 	    S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
+   
   
  #### Seleção de Dados da Tabela Glebas:
     A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP 
