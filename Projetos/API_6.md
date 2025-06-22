@@ -59,10 +59,11 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
       <td>GITHUB</td>
       <td>★★★★★</td>
     </tr>
-
-  <h3 align="center">Soft Skills</h3>
+ 
+  </table>
+ <h3 align="center">Soft Skills</h3>
   <table align="center">
-    <tr>
+   <tr>
       <th width="270px">Habilidade</th>
       <th width="290px">Descrição</th>
     </tr>
@@ -102,7 +103,7 @@ VL_VERTICES (Tipo Geometry)</p>
 
 <p>A tabela Glebas_sp armazena informações relacionadas a glebas de terras, Brasil.<br>
 
-**Informações sobre  os atributos:
+## Informações sobre  os atributos:
 
 <p>
 <b>REF_BACEN:</b> Referência relacionada ao Banco Central (Identificador único para cada registro).<br>
@@ -124,30 +125,11 @@ vértices da gleba, permitindo representar a forma da área de terra no plano ge
 
 ### Script para Coordenadas
 
-<p><strong>Python:</strong></p>
-
-<pre>
 import pandas as pd
 from shapely.geometry import Point
 from sqlalchemy import create_engine, Column, Integer, Text, Float, Geometry
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-
-# Definindo a classe da tabela
-Base = declarative_base()
-
-class Gleba(Base):
-    __tablename__ = 'glebas_sp'
-
-    REF_BACEN = Column(Integer, primary_key=True)
-    NU_ORDEM = Column(Text)
-    NU_IDENTIFICADOR = Column(Text)
-    NU_INDICE_GLEBA = Column(Text)
-    NU_INDICE_PONTO = Column(Integer)
-    VL_LATITUDE = Column(Text)
-    VL_LONGITUDE = Column(Text)
-    CGL_VL_ALTITUDE = Column(Text)
-    VL_VERTICES = Column(Geometry(geometry_type='POINT', srid=4326))
 
 # Configurações do banco de dados
 db_user = 'techninjas'
@@ -191,8 +173,6 @@ for _, row in df.iterrows():
 
 session.commit()
 session.close()
-</pre>
-
 
  ## Utilização de Bibliotecas:
   Pandas: Usada para manipulação de dados, especialmente para ler e escrever dados em formato de DataFrame.
@@ -305,7 +285,7 @@ session.close()
  *  A capacidade de criar consultas SQL eficientes para recuperar, inserir, atualizar e excluir dados proporcionou-me uma base 
     sólida para a manipulação eficaz de informações em um ambiente de banco de dados relacional.
  *  Com isso,posso aplicar no meu trabalho, os conhecimentos adquiridos, facilitando a migração,manipulação e extração das
-    informações necessárias nos projeto que administro no meu dia a dia.
+    informações necessárias nos projeto que administro e executo no meu dia a dia.
  *  Aprendi as práticas recomendadas para realizar backups regulares e garantir a recuperação eficiente de dados em situações de falha.
  *  A segurança e a integridade dos dados são prioridades, e a capacidade de restaurar dados é essencial para a continuidade dos 
     negócios.
