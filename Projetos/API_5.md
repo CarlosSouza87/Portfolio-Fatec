@@ -117,16 +117,11 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
       <td>Liderança</td>
       <td>Trabalhei na motivação dos integrantes da equipe, influenciando positivamente e contribuindo para o sucesso de todos</td>
 </table>
-  <h2 align="center">  Modelo do Banco de dados Subiter</h2>
+  <h2 align="center">  Modelo do Banco de dados</h2>
   <table align="center">
 <ul>
   <li>
-    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_Bancodados4.png" width="600" height="800" />
-  </li>
-</ul>
-<ul>
-  <li>
-    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/criacaobanco.png" width="650" height="800" />
+    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_L%C3%B3gico_Banco_de_Dados_API_MidAll_5_%C2%BA_Semestre.pdf" width="650" height="800" />
   </li>
 </ul>  </table>
 
