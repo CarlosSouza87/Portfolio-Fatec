@@ -59,7 +59,7 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
       <td>GITHUB</td>
       <td>★★★★★</td>
     </tr>
-     
+
   <h3 align="center">Soft Skills</h3>
   <table align="center">
     <tr>
@@ -89,7 +89,7 @@ Todas essas ações, desde a concepção do Modelo Lógico até a implementaçã
 
 ### Modelo Lógico
 
-<p><strong>Entidade:</strong> Gleba_SP</p>
+<p><strong>Tabela:</strong> Glebas_sp:</p>
 
 <p><strong>Atributos:</strong><br>
 REF_BACEN (Chave Primária)<br>
@@ -100,8 +100,9 @@ NU_INDICE_PONTO<br>
 CGL_VL_ALTITUDE<br>
 VL_VERTICES (Tipo Geometry)</p>
 
-<p>A tabela <code>glebas_sp</code> armazena informações relacionadas a glebas de terras, Brasil.<br>
-Aqui estão algumas explicações para os atributos:</p>
+<p>A tabela Glebas_sp armazena informações relacionadas a glebas de terras, Brasil.<br>
+
+**Informações sobre  os atributos:
 
 <p>
 <b>REF_BACEN:</b> Referência relacionada ao Banco Central (Identificador único para cada registro).<br>
@@ -114,8 +115,8 @@ Aqui estão algumas explicações para os atributos:</p>
 </p>
 
 <p>
-No seu caso, a coluna <code>VL_VERTICES</code> é do tipo geometry e é utilizada para armazenar informações
-sobre a forma geográfica da gleba do terreno. Isso pode incluir coordenadas espaciais que definem os
+A coluna VL_VERTICES é do tipo geometry e é utilizada para armazenar informações
+sobre a forma geográfica da gleba do terreno. São coordenadas espaciais que definem os
 vértices da gleba, permitindo representar a forma da área de terra no plano geográfico.
 </p>
 
@@ -225,8 +226,6 @@ session.close()
 
    ### Query Retorno Glebas
      
-   ```MYSQL
-	
 	SELECT 
 	    Glebas.REF_BACEN,
 	    Glebas.VL_VERTICES,
@@ -271,7 +270,6 @@ session.close()
 	    S5.VL_JUROS, S5.VL_RECEITA_BRUTA_ESPERADA, 
 	    S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
   
-   ```
  #### Seleção de Dados da Tabela Glebas:
     A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP 
     ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp,
