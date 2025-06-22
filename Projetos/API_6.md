@@ -36,6 +36,50 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
 
 <a href="https://reactjs.org">React</a>: Aplicado como um framework de código aberto e uma biblioteca JavaScript, React é utilizado para construir interfaces de usuário interativas e dinâmicas em aplicações web. É frequentemente empregado em projetos para criar componentes reutilizáveis, gerenciar o estado do aplicativo e fornecer uma experiência de usuário rica. React é conhecido por sua eficiência e poderosa capacidade de renderização, o que o torna uma escolha popular entre desenvolvedores para o desenvolvimento de aplicações web modernas e este framework foi aplicado no front end do projeto.
 
+
+<h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="300px">Tecnologia/Metodologia</th>
+      <th width="300px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Scrum</td>
+      <td>★★★★★</td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>★★★★★</td>
+    </tr>	
+   <tr>
+      <td>MongoDB </td>
+      <td>★☆☆☆☆</td>
+    </tr>	
+    <tr>
+      <td>GITHUB</td>
+      <td>★★★★★</td>
+    </tr>
+     
+  </table>
+
+ <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="300px">Habilidade</th>
+      <th width="300px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Comunicação Eficaz</td>
+      <td>Trabalhei a capacidade de se expressar verbalmente, de forma clara e concisa, e de ouvir e compreender as mensagens dos integrantes da equipe</td>
+    </tr>
+    <tr>
+      <td>Trabalho em Equipe</td>
+      <td>Trabalhei com outros integrantes  para atingir objetivos comuns, respeitando as opiniões e contribuindo para um ambiente de trabalho positivo.</td>
+    </tr>
+    <tr>
+      <td>Liderança</td>
+      <td>Trabalhei na motivação dos integrantes da equipe, influenciando positivamente e contribuindo para o sucesso de todos</td>
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  ## :dart: Contribuições Pessoais: 
