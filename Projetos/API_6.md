@@ -60,28 +60,24 @@ Incluimos a capacidade de salvar imagens das séries temporais, possibilitando a
       <td>★★★★★</td>
     </tr>
      
-  </table>
-
- <h3 align="center">Soft Skills</h3>
+  <h3 align="center">Soft Skills</h3>
   <table align="center">
     <tr>
-      <th width="300px">Habilidade</th>
-      <th width="300px">Descrição</th>
+      <th width="270px">Habilidade</th>
+      <th width="290px">Descrição</th>
     </tr>
-    <tr>
-      <td>Comunicação Eficaz</td>
-      <td>Trabalhei a capacidade de se expressar verbalmente, de forma clara e concisa, e de ouvir e compreender as mensagens dos integrantes da equipe</td>
-    </tr>
-    <tr>
-      <td>Trabalho em Equipe</td>
-      <td>Trabalhei com outros integrantes  para atingir objetivos comuns, respeitando as opiniões e contribuindo para um ambiente de trabalho positivo.</td>
-    </tr>
-    <tr>
-      <td>Liderança</td>
-      <td>Trabalhei na motivação dos integrantes da equipe, influenciando positivamente e contribuindo para o sucesso de todos</td>
-</table>
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+  <td>Resolução de Conflitos</td>
+  <td>Utilizei minha habilidade de resolução de conflitos para lidar com desacordos e tensões de forma equilibrada, construtiva e eficaz, buscando compreender as causas do conflito e encontrar soluções que atendessem às necessidades de todas as partes envolvidas.</td>
+</tr>
+<tr>
+  <td>Negociação</td>
+  <td>Aprimorei minhas habilidades de negociação para alinhar  com a equipe de desenvolvedores e P.O. para atender as expectativas do cliente alinhada com a capacidade da equipe.</td>
+</tr>
+<tr>
+  <td>Liderança</td>
+  <td>Durante o projeto, percebi que os desenvolvedores estavam enfrentando gargalos nas tarefas. Atuei como facilitador, organizando reuniões objetivas com as partes envolvidas e eliminando bloqueios, permitindo que a equipe mantivesse o ritmo sem desgastes.</td>
+</tr>
+  </table>
 
  ## :dart: Contribuições Pessoais: 
 
