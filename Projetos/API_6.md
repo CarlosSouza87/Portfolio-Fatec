@@ -201,56 +201,74 @@ session.close()
   Um objeto Gleba é criado para cada linha do DataFrame, e a coluna VL_VERTICES é preenchida com o objeto geométrico
   correspondente.Os objetos são adicionados à sessão e, ao final do loop, as alterações são confirmadas no banco de dados. 
 
-</details> 
-
 #### Querys para retorno de informações 
+<pre>
+	SELECT
+        Glebas.REF_BACEN,
+        Glebas.VL_VERTICES,
+        S5.DT_EMISSAO AS DATA_EMISSAO_REFBACEN,
+        CASE
+            WHEN S5.CD_ESTADO = 'SP' THEN 'São Paulo'
+            ELSE S5.CD_ESTADO
+        END AS ESTADO,
+        GARAN_EMPREEND.DESCRICAO AS TIPO_SEGURO,
+        S5.DT_FIM_PLANTIO AS DATA_PLANTIO,
+        GRAO_IRRIG.DESCRICAO AS TIPO_IRRIGACAO,
+        GRAO.DESCRICAO AS TIPO_GRAO,
+        S5.VL_ALIQ_PROAGRO AS VALOR_ALIQUOTA,
+        S5.VL_JUROS AS JUROS_INVESTIMENTO,
+        S5.VL_RECEITA_BRUTA_ESPERADA AS RECEITA_BRUTA_ESTIMADA,
+        S5.DT_FIM_COLHEITA AS DATA_FIM_COLHEITA
+    FROM (
+        SELECT
+            GLP.REF_BACEN,
+            GLP.VL_VERTICES
+        FROM techdata.glebas_sp GLP
+        ORDER BY GLP.NU_INDICE_PONTO
+    ) AS Glebas
+    JOIN techdata.saida5 S5 ON S5.REF_BACEN = Glebas.REF_BACEN
+    JOIN techvision.grao_semente GRAO ON GRAO.CODIGO = S5.CD_TIPO_GRAO_SEMENTE
+    LEFT JOIN techvision.tipo_irrigacao GRAO_IRRIG ON GRAO_IRRIG.CODIGO = S5.CD_TIPO_IRRIGACAO
+    LEFT JOIN (
+        SELECT CODIGO, DESCRICAO
+        FROM techvision.tipo_garantia_empreendimento
+    ) AS GARAN_EMPREEND ON GARAN_EMPREEND.CODIGO = S5.CD_TIPO_SEGURO
+    GROUP BY
+        Glebas.REF_BACEN, S5.DT_EMISSAO,
+        S5.CD_ESTADO, GARAN_EMPREEND.DESCRICAO,
+        GRAO_IRRIG.DESCRICAO, GRAO.DESCRICAO,
+        S5.DT_FIM_PLANTIO, S5.CD_TIPO_IRRIGACAO,
+        S5.VL_ALIQ_PROAGRO, S5.CD_TIPO_CULTIVO,
+        S5.VL_JUROS, S5.VL_RECEITA_BRUTA_ESPERADA,
+        S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
 
-   ### Query Retorno Glebas
-	SELECT 
-	    Glebas.REF_BACEN,
-	    Glebas.VL_VERTICES,
-	    S5.DT_EMISSAO AS DATA_EMISSAO_REFBACEN,
-	    CASE 
-	        WHEN S5.CD_ESTADO = 'SP' THEN 'São Paulo'
-	        ELSE S5.CD_ESTADO 
-	    END AS ESTADO,
-	    GARAN_EMPREEND.DESCRICAO AS TIPO_SEGURO,
-	    S5.DT_FIM_PLANTIO AS DATA_PLANTIO,
-	    GRAO_IRRIG.DESCRICAO AS TIPO_IRRIGACAO,
-	    GRAO.DESCRICAO AS TIPO_GRAO,
-	    S5.VL_ALIQ_PROAGRO AS VALOR_ALIQUOTA,
-	    S5.VL_JUROS AS JUROS_INVESTIMENTO,
-	    S5.VL_RECEITA_BRUTA_ESPERADA AS RECEITA_BRUTA_ESTIMADA,
-	    S5.DT_FIM_COLHEITA AS DATA_FIM_COLHEITA
-	FROM (
-	    SELECT 
-	        GLP.REF_BACEN,
-	        GLP.VL_VERTICES
-	    FROM 
-		techdata.glebas_sp GLP
-	    ORDER BY 
-		GLP.NU_INDICE_PONTO
-	) AS Glebas
-	JOIN techdata.saida5 S5 ON S5.REF_BACEN = Glebas.REF_BACEN
-	JOIN  techvision.grao_semente GRAO ON GRAO.CODIGO = S5.CD_TIPO_GRAO_SEMENTE
-	LEFT JOIN  techvision.tipo_irrigacao GRAO_IRRIG ON GRAO_IRRIG.CODIGO = S5.CD_TIPO_IRRIGACAO
-	LEFT JOIN (
-	    SELECT 
-	        CODIGO, 
-		DESCRICAO
-	    FROM 
-		techvision.tipo_garantia_empreendimento
-	) AS GARAN_EMPREEND ON GARAN_EMPREEND.CODIGO = S5.CD_TIPO_SEGURO
-	GROUP BY
-	    Glebas.REF_BACEN, S5.DT_EMISSAO, 		
-	    S5.CD_ESTADO, GARAN_EMPREEND.DESCRICAO, 
-	    GRAO_IRRIG.DESCRICAO, GRAO.DESCRICAO,
-	    S5.DT_FIM_PLANTIO, S5.CD_TIPO_IRRIGACAO, 
-	    S5.VL_ALIQ_PROAGRO,	S5.CD_TIPO_CULTIVO, 
-	    S5.VL_JUROS, S5.VL_RECEITA_BRUTA_ESPERADA, 
-	    S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
-   
-  
+        S5.VL_RECEITA_BRUTA_ESPERADA AS RECEITA_BRUTA_ESTIMADA,
+        S5.DT_FIM_COLHEITA AS DATA_FIM_COLHEITA
+    FROM (
+        SELECT
+            GLP.REF_BACEN,
+            GLP.VL_VERTICES
+        FROM techdata.glebas_sp GLP
+        ORDER BY GLP.NU_INDICE_PONTO
+    ) AS Glebas
+    JOIN techdata.saida5 S5 ON S5.REF_BACEN = Glebas.REF_BACEN
+    JOIN techvision.grao_semente GRAO ON GRAO.CODIGO = S5.CD_TIPO_GRAO_SEMENTE
+    LEFT JOIN techvision.tipo_irrigacao GRAO_IRRIG ON GRAO_IRRIG.CODIGO = S5.CD_TIPO_IRRIGACAO
+    LEFT JOIN (
+        SELECT CODIGO, DESCRICAO
+        FROM techvision.tipo_garantia_empreendimento
+    ) AS GARAN_EMPREEND ON GARAN_EMPREEND.CODIGO = S5.CD_TIPO_SEGURO
+    GROUP BY
+        Glebas.REF_BACEN, S5.DT_EMISSAO,
+        S5.CD_ESTADO, GARAN_EMPREEND.DESCRICAO,
+        GRAO_IRRIG.DESCRICAO, GRAO.DESCRICAO,
+        S5.DT_FIM_PLANTIO, S5.CD_TIPO_IRRIGACAO,
+        S5.VL_ALIQ_PROAGRO, S5.CD_TIPO_CULTIVO,
+        S5.VL_JUROS, S5.VL_RECEITA_BRUTA_ESPERADA,
+        S5.DT_FIM_COLHEITA, S5.VL_PERC_CUSTO_EFET_TOTAL
+
+</pre>
+
  #### Seleção de Dados da Tabela Glebas:
     A subconsulta interna (SELECT GLP.REF_BACEN, GLP.VL_VERTICES FROM techdata.glebas_sp GLP 
     ORDER BY GLP.NU_INDICE_PONTO) seleciona os campos REF_BACEN e VL_VERTICES da tabela glebas_sp,
