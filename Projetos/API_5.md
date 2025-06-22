@@ -120,9 +120,10 @@ Além disso, foi construída uma API que funciona como o serviço responsável p
   <h2 align="center">  Modelo do Banco de dados</h2>
   <table align="center">
 <ul>
-  <li>
-    <img src="https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_L%C3%B3gico_Banco_de_Dados_API_MidAll_5_%C2%BA_Semestre.pdf" width="650" height="800" />
-  </li>
+
+Clique abaixo para visualizar o PDF completo com o modelo de dados:
+
+[🔗 Visualizar Modelo Lógico (PDF)](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Modelo_L%C3%B3gico_Banco_de_Dados_API_MidAll_5_%C2%BA_Semestre.pdf)
 </ul>  </table>
 
 
