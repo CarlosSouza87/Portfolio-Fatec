@@ -288,26 +288,26 @@ session.close()
    </pre>
 
 #### Seleção de Campos e Manipulação de Dados:
-<prev>
+<pre>
 	 A consulta seleciona vários campos, incluindo REF_BACEN, VL_VERTICES, DT_EMISSAO, CD_ESTADO, e outros.
     	 A cláusula CASE é usada para alterar o valor da coluna ESTADO dependendo do valor de CD_ESTADO,
          renomeando o estado "SP" para "São Paulo".
-</prev>
+</pre>
 #### Agrupamento e Funções de Agregação:
-
-
-   	 Os resultados são agrupados usando a cláusula GROUP BY com base em várias colunas, incluindo 
+<pre>
+	Os resultados são agrupados usando a cláusula GROUP BY com base em várias colunas, incluindo 
     	 REF_BACEN, DT_EMISSAO, CD_ESTADO, e outros.
-    	 Funções de agregação, como SUM ou AVG, não estão presentes na consulta, mas poderiam ser adicionadas se necessário.
+    	 Funções de agregação, como SUM ou AVG, não estão presentes na consulta, mas poderiam 
+	 ser adicionadas se necessário.
+</pre>
 
 #### Resultados da Consulta:
-    <prev>
-	    A consulta retorna informações sobre glebas agrícolas, suas safras associadas, tipos de grãos,
+   <pre>
+	   A consulta retorna informações sobre glebas agrícolas, suas safras associadas, tipos de grãos,
             informações sobre irrigação, seguro agrícola e outros detalhes relevantes.
             Os resultados são organizados de acordo com as colunas especificadas na cláusula GROUP BY.
-     </prev>
-
-     
+   </pre>
+   
 ### Conhecimentos aprimorados/adquiridos
 
  *  Ao longo do projeto aprendi novas funções e comandos sobre bancos de dados, melhorei e aprofundei minha compreensão dos conceitos 
