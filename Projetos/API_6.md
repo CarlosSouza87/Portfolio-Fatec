@@ -88,20 +88,10 @@ de maneira rapida e eficiente.
 Trabalhei de perto com a equipe, também executando meu papel de Scrum master, resolvendo atritos entre os membros do grupo, com reuniões de pacificações para resolver a diversas divergencias pessoas dentro do projeto, buscando sempre a integração perfeita entre os membros do grupo.
 Todas essas ações, desde a concepção do Modelo Lógico até a implementação das consultas SQL,além da administração de pessoas, foi fundamental na construção de uma estrutura coesa e eficaz para  desenvolvimento e o sucesso desse  projeto.
 
-### Modelo Lógico
-
-<p><strong>Tabela:</strong> Glebas_sp:</p>
-<pre>
-	
-	REF_BACEN (Chave Primária)
-	NU_ORDEM
-	NU_IDENTIFICADOR
-	NU_INDICE_GLEBA
-	NU_INDICE_PONTO
-	CGL_VL_ALTITUDE
-	VL_VERTICES (Tipo Geometry)
-</pre>
-    <p>A tabela Glebas_sp armazena informações relacionadas a glebas de terras, Brasil.<br>
+### Dicionario de Dados do Projeto
+Clique abaixo para visualizar o PDF completo com o dicionario de dados do projeto:
+ 
+[🔗 Visualizar Dicionario de dados(PDF)](https://github.com/CarlosSouza87/Portfolio-Fatec/blob/main/img/Dicionario_de%20dados.pdf)
 
 ## Informações sobre  os atributos:
 
